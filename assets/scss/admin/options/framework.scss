@@ -1,0 +1,724 @@
+// stylesheet: options framework styles
+
+	// globals
+		.toplevel_page_homepage-billboard,
+		.toplevel_page_vc-general,
+		.admin_page_homepage-billboard,
+		.hhs-wordpress_page_site-settings,
+		.runway_page_content-types,
+		.runway_page_options-builder {
+
+		// modals
+			.ui-widget-overlay {
+
+				background-color: darken($navy, 30%);
+
+				opacity: 0.750;	
+
+			}
+
+			.ui-dialog {
+
+				padding: 0;
+
+				border: none;
+
+				border-radius: 0px;
+
+				background-color: $admin;
+
+				box-shadow: 0 0 200px transparentize(black, 0.050);
+
+				.ui-widget-content {
+
+					background-image: none !important;
+
+				}
+
+				.ui-widget-header {
+
+					background-color: $navy !important;
+
+					background-image: none !important;
+
+				}
+
+				.ui-dialog-titlebar {
+
+					top: 0;
+
+					width: calc(100% - 32px);
+					height: 62px; 
+					margin: 0;
+					padding: 2px 16px 0 16px;
+
+					border: none;
+
+					// box-sizing: border-box;
+
+					border-radius: 0px;
+
+					.ui-dialog-title {
+
+						h2 {
+
+							margin: 0;
+
+							font-family: $vit-bold;
+							font-size: 20px;
+							font-weight: normal;
+
+							line-height: 64px;
+
+							text-shadow: none;
+
+							color: white;
+
+						}
+
+					}
+
+					.ui-dialog-titlebar-close {
+
+						top: 20px;
+						right: 16px;
+
+						width: 24px;
+						height: 24px;
+						margin: 0;
+						padding: 0;
+
+						border: 0;
+						border-radius: 0px;
+
+						background-color: darken($red, 12%);
+						background-color: transparentize(white, 0.925);
+
+						background-image: url(../img/icons/admin/icon_close.svg);
+						background-repeat: no-repeat;
+						background-size: 16px 16px;
+						background-position: 4px 4px;
+
+						background-clip: none;
+
+						transition: $all220;
+
+						&:hover {
+
+							background-color: $red;
+
+						}
+
+						.ui-icon {
+
+							background-image: none !important;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			.settings-dialog-modal {
+
+				.settings-dialog {
+
+					top: 64px;
+					right: 0;
+					bottom: 0;
+					left: 0;
+
+					border: none;
+
+					border-radius: 0px;
+
+					box-shadow: none;
+
+				}
+
+			}
+
+		// framework hook
+			#theme-framework,
+			#wpb-js-composer-settings {
+
+				&.hasPageTitle {
+
+					h2 {
+
+						&.nav-tab-wrapper {
+
+							padding: 6px 24px 0 24px;
+
+						}
+
+					}
+
+				}
+
+				.nav-bar-trail {
+
+					margin: 0 0 12px 0;
+
+					li {
+
+						height: 24px;
+						margin: 0;
+						padding: 0 6px 0 20px;
+
+						border: none;
+
+						box-sizing: border-box;
+
+						font-family: $indu-demi;
+						font-size: 11px !important;
+						font-weight: normal;
+
+						line-height: 24px;
+
+						letter-spacing: 0.025em;
+
+						text-transform: $up;
+
+						background-color: transparentize($admin, 0.275);
+
+						a {
+
+							height: 24px;
+							margin: 0 -6px 0 0;
+							padding: 1px 4px 0 0;
+
+							box-sizing: border-box;
+
+							color: white;
+
+							&:before,
+							&:after {
+
+								margin-top: -12px;
+
+								border-width: 12px 0 12px 12px;
+
+							}
+
+							&:before {
+
+								right: -12px;
+
+								border-left-color: white;
+
+							}
+
+							&:after {
+
+								right: -12px;
+
+								border-left-color: darken($lights, 30%);
+
+							}
+
+						}
+
+						&:first-child {
+
+							padding-left: 10px;
+
+							background-color: darken($lights, 30%);
+
+						}
+
+						&:nth-child(2) {
+
+							color: white;
+							background-color: darken($lights, 30%);
+
+							a {
+
+								&:before {
+
+									border-left-color: white;
+
+								}
+
+								&:after {
+
+									border-left-color: darken($lights, 30%);
+
+								}
+
+							}
+
+						}
+
+						&.selected {
+
+							color: white;
+							background-color: darken($lights, 40%);
+
+							&:before {
+
+								border-left-color: red;
+
+							}
+
+							&:after {
+
+								border-left-color: red;
+
+							}
+
+						}
+
+						&:last-child {
+
+							padding: 1px 12px 0 20px;
+
+							color: white;
+							background-color: darken($lights, 45%);
+
+						}
+
+					}
+
+				}
+
+				.updated {
+
+					margin: 6px 24px 12px 24px;
+
+					// box-shadow: none;
+
+				}
+
+				.nav-tab-wrapper {
+
+					border-bottom: none;
+
+					.nav-tab {
+
+						padding: 0 12px 0 12px;
+
+						border: none;
+
+						font-family: $indu-demi;
+						font-size: 12px;
+						font-weight: normal;
+
+						line-height: 32px;
+
+						text-transform: $up;
+
+						color: white;
+						background-color: transparentize($navy, 0.650);
+
+						transition: $all220;
+
+						&.nav-tab-active {
+
+							font-family: $indu-demi;
+
+							color: $navy;
+							background-color: $lights;
+
+							&:hover {
+
+								font-family: $indu-demi;
+
+								color: $navy;
+								background-color: $lights;
+
+							}
+
+						}
+
+						&:first-child {
+
+							margin-left: 0;
+
+						}
+
+						&:hover {
+
+							font-family: $indu-demi;
+
+							color: white;
+							background-color: transparentize($navy, 0.150);
+
+						}
+
+					}
+
+				}
+
+				#post-body {
+
+					#post-body-content {
+
+						padding: 0 24px 0 24px;
+
+					}
+
+				}
+
+			// options layout
+				.form-table {
+
+					th {
+
+						span {
+
+							font-family: $indu-demi;
+							font-size: 14px;
+							font-weight: normal;
+
+							line-height: 24px;
+
+							text-transform: $up;
+
+							color: $steel;
+
+						}
+
+						.description {
+
+							font-size: 12px;
+							font-weight: normal;
+
+							line-height: 16px;
+
+							color: $steel;
+
+						}
+
+					}
+
+				}
+
+			// developer info
+				.data-function {
+
+					margin: 0;
+
+					border-radius: 0px;
+
+				}
+
+			// postbox styles
+				.page-layer {
+
+					min-height: 32px;
+
+					.postbox-title {
+
+						padding: 1px 12px 0 12px;
+
+						font-family: $klav-semi;
+						font-size: 14px;
+						
+						line-height: 32px;
+
+						letter-spacing: 0.035em;
+
+						text-transform: $up;
+
+						span {
+
+							font-weight: normal;
+
+						}
+
+					}
+
+					.postbox {
+
+						.inside {
+
+							min-height: 0 !important;
+
+						}
+
+					}
+
+					.tabbox,
+					.containerbox,
+					.fieldbox {
+
+						border: none;
+
+						box-shadow: none;
+
+						&:hover {
+
+							.handlediv {
+
+								background: $navy !important;
+
+							}
+
+						}
+
+						.handlediv {
+
+							width: 32px;
+							height: 32px;
+							margin: 0;
+
+							background-color: $navy;
+
+							&:hover {
+
+								&:before {
+
+									background-color: transparentize($green, 0.215);
+
+									opacity: 1.0;
+
+									transition: $all160;
+
+								}
+
+							}
+
+							&:before {
+
+								content: '';
+
+								display: inline-block;
+
+								width: 32px;
+								height: 32px;
+
+								background-color: transparentize($navy, 0.225);
+
+								opacity: 0.750;
+
+								background-image: url(../img/icons/admin/icon_toggle_postbox.svg);
+								background-repeat: no-repeat;
+								background-size: 32px 32px;
+								background-position: top center;
+
+								transition: $all160;
+
+							}
+
+						}
+
+						.page-element-controls {
+
+							display: inline-flex;
+
+							margin: 0;
+							padding: 0;
+
+							line-height: 32px;
+
+							color: transparent;
+
+							a,
+							span {
+
+								display: inline-flex;
+
+								width: auto;
+								height: 32px;
+								margin: 0;
+								padding: 0 12px 0 12px;
+
+								box-sizing: border-box;
+
+								font-family: $klav-semi;
+								font-size: 12px;
+
+								line-height: 32px;
+
+								text-align: center;
+
+								text-transform: $up;
+
+								color: white;
+
+								&:hover {
+
+									transition: $all160;
+
+								}
+
+								&.edit {
+
+									position: relative;
+
+									margin-right: -2px;
+
+									&:hover {
+
+										background-color: $green;
+
+									}
+
+								}
+
+								&.duplicate {
+
+									margin-right: -2px;
+
+									&:hover {
+
+										background-color: $orange;
+
+									}
+
+								}
+
+								&.delete {
+
+									position: relative;
+
+									padding: 0;
+
+									&:hover {
+
+										background-color: $red;
+
+									}
+
+									a {
+
+										width: 54px;
+										min-width: 54px;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+					.tabbox {
+
+						padding: 0;
+
+						.postbox-title {
+
+							padding: 0 12px 0 12px;
+
+							color: white;
+							background-color: darken($navy, 3%);
+
+						}
+
+					}
+
+					.page-container {
+
+						padding: 0 12px 12px 12px;
+
+						box-sizing: border-box;
+
+						background-color: transparentize($admin, 0.890);
+
+					}
+
+					.containerbox {
+
+						padding: 0;
+
+						background-color: transparentize($admin, 0.850);
+
+						.postbox-title {
+
+							color: white;
+							background-color: transparentize($navy, 0.250);
+
+						}
+
+						.inside {
+
+							padding: 12px 0 0 0;
+
+							border: 1px solid transparent;
+							border-top: none;
+
+						}
+
+						.page-field {
+
+							margin-bottom: 12px;
+
+							&:first-child {
+
+								padding-top: 0;
+
+							}
+
+							&:last-child {
+
+								margin-bottom: 0;
+
+							}
+
+						}
+
+					}
+
+					.fieldbox {
+
+						margin: 0 12px 0 12px;
+						padding: 0;
+
+						box-sizing: border-box;
+
+						background-color: transparentize($admin, 0.875);
+
+						.page-element-controls,
+						.postbox-title {
+
+							background-color: transparentize($navy, 0.650);
+
+						}
+
+						.postbox-title {
+
+							display: flex;
+
+							width: auto !important;
+
+						}
+
+						.inside {
+
+							padding: 16px;
+
+							border: none;
+
+							background-color: white;
+
+							.developerMode {
+
+								padding: 0;
+
+							}
+
+						}
+
+					}
+
+					.page-element {
+
+						&:first-child {
+
+							padding-top: 12px;
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

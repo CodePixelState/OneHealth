@@ -1,0 +1,200 @@
+// stylesheet: custom color overrides
+
+	// set color variables
+		$color : 
+
+			adjust-color(
+
+				$navy,
+				$lightness  : 0%,
+				$saturation : 0%,
+				$alpha 		: 0.000
+
+			)
+
+		;
+
+		$ui-orange :
+
+			adjust-color(
+
+				$grown,
+				$lightness  : -12.5%,
+				$saturation : -10%,
+				$alpha 		: 0.000
+
+			)
+
+		;
+
+		$button-secondary :
+
+			adjust-color(
+
+				$admin,
+				$lightness  : 10%,
+				$saturation : 0%,
+				$alpha 		: -0.100
+
+			)
+
+		;
+
+	// style buttons so they don't look like web 2.0 shit-nuggets
+		.wp-core-ui {
+
+			.button,
+			.button-primary,
+			.button-secondary,
+			.button.button-small,
+			.button-link,
+			.button.button-large {
+
+				height: 32px;
+				padding: 1px 16px 0 16px;
+
+				border: none !important;
+
+				box-sizing: border-box;
+
+				border-radius: 0px !important;
+
+				font-size: 11px;
+				// font-family: $klav-semi;
+				font-family: $indu-demi;
+				font-weight: normal;
+
+				line-height: 32px;
+
+				letter-spacing: 0.0215em;
+
+				text-transform: $up;
+				text-shadow: none !important;
+
+				box-shadow: none !important;
+
+				transition: $zip520;
+
+			}
+
+			.button-primary {
+
+				// height: 48px;
+				// padding: 1px 24px 0 24px;
+
+				box-sizing: content-box;
+
+				// font-size: 14px;
+
+				// line-height: 48px;
+
+				letter-spacing: 0.055em;
+
+				color: white;
+				background-color: $ui-orange;
+
+				&:hover {
+
+					background-color: $navy;
+
+				}
+
+			}
+
+			.button {
+
+				color: white;
+				background-color: transparentize($button-secondary, 0.550);
+
+				&:hover {
+
+					color: white;
+					background-color: lighten($navy, 10%);
+
+				}
+
+				&:focus {
+
+					color: white;
+					background-color: lighten($navy, 5%);	
+
+				}
+
+			}
+
+			#search-submit {
+
+				background-color: $ui-orange;
+
+				&:hover {
+
+					background-color: $navy;
+
+				}
+
+			}
+
+		}
+
+	// menu colors
+		#adminmenu {
+
+			.wp-menu-arrow {
+
+				background-color: $color;
+
+				div {
+
+					background-color: $color;
+
+				}
+
+			}
+
+			.wp-has-current-submenu {
+
+				.wp-submenu {
+
+					.wp-submenu-head {
+
+						background-color: $color;
+
+					}
+
+				}
+
+			}
+
+			li {
+
+				&.current {
+
+					a {
+
+						&.menu-top {
+
+							background-color: $color;
+
+						}
+
+					}
+
+				}
+
+				&.wp-has-current-submenu {
+
+					a {
+
+						&.wp-has-current-submenu {
+
+							background-color: $color;
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

@@ -1,0 +1,372 @@
+// stylesheet: simple post template styles
+
+	// top-level hook
+		.single-simple {
+
+			#post-content {
+
+				position: absolute;
+
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				z-index: 100;
+
+				width: 100%;
+				height: 100%;
+				min-height: 100%;
+				margin: 0;
+				padding: 0;
+
+				background: {
+
+					color: transparentize($midnite, 0.875);
+
+					image: url(../img/billboards/billboard_59.jpg);
+
+					repeat: no-repeat;
+					size: cover;
+					position: center center;
+
+				}
+
+				#inner-content {
+
+					position: absolute;
+
+					top: 64px;
+					right: 64px;
+					bottom: 0;
+					left: 64px;
+
+					// z-index: 100;
+
+					width: calc(100% - 128px);
+					height: calc(100% - 64px);
+					margin: 0 0 0 0;
+					padding: 0 0 0 0;
+
+					overflow-y: scroll;
+
+					background: {
+
+						color: transparentize($grown, 0.125);
+
+						image:
+
+							linear-gradient(
+
+								180deg,
+								adjust-color(
+
+									$navy,
+									$hue 		: 0%,
+									$saturation : -20%,
+									$lightness  : -20%,
+									$alpha  	: -0.285
+
+								) 0%,
+								transparentize($nite, 0.385) 100%
+
+							)
+
+						;
+
+					}
+
+					#post-main {
+
+						position: relative;
+
+						z-index: 101;
+
+						margin: 128px 0 128px 0;
+						padding: 0 20% 0 20%;
+
+						.simple {
+
+							header {
+
+								h1 {
+
+									position: relative;
+
+									margin: 0 0 24px 0;
+
+									font: {
+
+										family: $klav-nemi;
+										size: 40px;
+										weight: normal;
+
+									}
+
+									line-height: 48px;
+
+									letter-spacing: 0.085em;
+
+									text: {
+
+										transform: $up;
+										rendering: $pixper;
+
+									}
+
+									color: white;
+
+									&:before {
+
+										content: '';
+
+										position: absolute;
+
+										top: -16px;
+										left: 0;
+
+										z-index: 1;
+
+										display: block;
+
+										width: 64px;
+										height: 3px;
+										margin: 0;
+										padding: 0;
+
+										background: {
+
+											// color: $turqish;
+											color: $yellow;
+
+										}
+
+										@media #{$small-only} {
+											
+											width: 48px;
+											height: 2px;
+										
+										}
+
+									}
+
+								}
+
+								.simple-byline {
+
+									display: flex;
+
+									flex-direction: row;
+									justify-content: space-between;
+									align-items: center;
+
+									width: 100%;
+									height: 32px;
+									margin: 0 0 32px 0;
+									padding: 0 12px 0 12px;
+
+									background: {
+
+										color: transparentize(white, 0.915);
+
+									}
+
+									span {
+
+										font: {
+
+											family: $klav-nemi;
+											size: 12px;
+											weight: normal;
+
+										}
+
+										letter-spacing: 0.045em;
+
+										text: {
+
+											transform: $up;
+											rendering: $pixper;
+
+										}
+
+										color: transparentize(white, 0.125);
+
+									}
+
+								}
+
+							}
+
+							.entry-content {
+
+								p {
+
+									font: {
+
+										family: $klav-nont;
+										size: 16px;
+										weight: normal;
+
+									}
+
+									line-height: 28px;
+
+									letter-spacing: 0.025em;
+
+									text: {
+
+										rendering: $pixper;
+
+									}
+
+									color: transparentize(white, 0.000);
+
+								}
+
+							}
+
+						}
+
+						.panel-label {
+
+							position: fixed;
+
+							top: calc(50% - 32px);
+							left: 0;
+
+							z-index: 40;
+
+							display: block;
+
+							// width: auto;
+							width: 384px;
+							height: 64px;
+							margin: 0;
+							padding: 1px 0 0 0;
+
+							font: {
+
+								family: $klav-nemi;
+								size: 12px;
+								weight: normal;
+
+							}
+
+							line-height: 64px;
+
+							letter-spacing: 0.145em;
+
+							text: {
+
+								align: center;
+								transform: $up;
+								rendering: $pixper;
+
+							}
+
+							color:
+
+								adjust-color(
+
+									$navy,
+									$lightness  : -5%,
+									$saturation : 0%,
+									$alpha  	: -0.095
+
+								)
+
+							;
+
+							background: {
+
+								color: transparentize(red, 1.000);
+
+							}
+
+							// opacity: 0.000;
+
+							transform:
+
+								rotate(-90deg)
+								translate3d(0,-160px,0)
+
+							;
+							
+							transform-origin: center center;
+
+							transition: opacity 360ms $outIt 0ms;
+
+							@media #{$small-only} {
+								
+								top: calc(50% - 24px);
+
+								height: 48px;
+
+								line-height: 48px;
+
+								transform:
+
+									rotate(-90deg)
+									translate3d(0,-104px,0)
+
+								;
+							
+							}
+
+						}
+
+					}
+
+				}
+
+			// UI elements
+				.ui-toolbar {
+
+					opacity: 1.000;
+
+				}
+
+				.left-toolbar {
+
+					background: {
+
+						color: transparentize(white, 0.285);
+
+					}
+
+				}
+
+				.right-toolbar {
+
+					background: {
+
+						color: transparentize(white, 0.185);
+
+						image:
+
+							linear-gradient(
+
+								180deg,
+								adjust-color(
+
+									$green,
+									$lightness  : -5%,
+									$saturation : 0%,
+									$alpha  	: -0.235
+
+								) 0%,
+								transparentize($green, 1.000) 60%,
+								transparentize(white, 0.725) 100%
+
+							)
+
+						;
+
+					}
+
+				}
+
+			}
+
+		}

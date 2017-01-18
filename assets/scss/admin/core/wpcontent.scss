@@ -1,0 +1,147 @@
+// stylesheet: page content styles
+
+	// top-level hook
+		#wpcontent {
+
+			#wpbody {
+
+				.wrap {
+
+					margin: 0;
+
+					#theme-framework {
+
+						// moved
+
+					}
+
+					.page-title-action {
+
+						display: inline-block;
+
+						margin: 0 0 0 12px;
+						padding: 2px 12px 0 12px;
+
+						border: none;
+						border-radius: 0px;
+
+						font-family: $indu-demi;
+						font-size: 11px;
+						font-weight: normal;
+
+						line-height: 24px;
+
+						letter-spacing: 0.0175em;
+
+						text-rendering: $pixper;
+						text-transform: $up;
+
+						color: transparentize(white, 0.150);
+						background-color: transparentize(black, 0.650);
+
+						transition: $all220;
+
+						&:hover {
+
+							color: white;
+							background-color: transparentize(black, 0.250);
+
+						}
+
+					}
+
+					h1,
+					h2 {
+
+						&.page-title,
+						&.adminTitle {
+
+							// display: flex;
+
+							margin: 0 0 8px 0;
+							padding: 12px 24px 0 24px;
+
+							align-items: center;
+
+							font-family: $indu-bold;
+							font-size: 24px;
+
+							line-height: 48px;
+
+							text-transform: $up;
+
+							// color: lighten($navy, 5%);
+							color: $g135;
+
+							span,
+							label,
+							input,
+							a {
+
+								font-family: $indu-demi;
+
+							}
+
+							.title-count {
+
+								top: auto;
+
+								display: inline-block;
+
+								margin: 11px 24px 13px 12px;
+								padding: 0 8px 0 8px;
+
+								font-size: 12px;
+								font-weight: normal;
+
+								line-height: 22px;
+
+							}
+
+							a {
+
+								border-radius: 0px;
+
+								transition: $all220;
+
+								&.add-new-h2,
+								&.page-title-action {
+
+									margin: 0 0 0 12px;
+									padding: 2px 12px 0 12px;
+
+									border: none;
+
+									font-family: $indu-demi;
+									font-size: 11px;
+									font-weight: normal;
+
+									line-height: 24px;
+
+									letter-spacing: 0.0175em;
+
+									text-rendering: $pixper;
+
+									color: transparentize(white, 0.150);
+									background-color: transparentize(black, 0.650);
+
+								}
+
+								&:hover {
+
+									color: white;
+									background-color: transparentize(black, 0.250);
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

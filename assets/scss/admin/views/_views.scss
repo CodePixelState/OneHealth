@@ -1,0 +1,70 @@
+// stylesheet: admin views compiler
+
+	// dashboard
+		@import "dashboard";
+		@import "dashboard-custom";
+
+	// edit
+		@import "edit";
+
+	// page edit screen
+		@import "page";
+
+	// screen options
+		@import "screen_options";
+
+	// visual composer
+		@import "visual_composer";
+
+	// what the fuck ever
+		.index-php,
+		.themes-php,
+		.widgets-php,
+		.nav-menus-php,
+		.post-type-post,
+		.post-type-contacts-locations,
+		.post-type-page,
+		.post_type-piklist_demo,
+		.users-php,
+		.tools-php,
+		.upload-php,
+		.plugins-php,
+		.my-sites-php,
+		.options-general-php,
+		.options-writing-php,
+		.options-reading-php,
+		.options-discussion-php,
+		.options-media-php,
+		.options-permalink-php,
+		.toplevel_page_piklist,
+		.runway_page_dashboard,
+		.post-type-content_panel,
+		.post-type-simple {
+
+			#wpcontent {
+
+				#wpbody {
+
+					#wpbody-content {
+
+						.wrap {
+
+							padding: 0 24px 0 24px;
+
+							box-sizing: border-box;
+
+							.page-title {
+
+								padding: 12px 24px 0 0;
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

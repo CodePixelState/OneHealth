@@ -1,0 +1,83 @@
+// stylesheet: widget manager styles
+
+	// top-level hook
+		.widgets-php {
+
+			.sidebar-name {
+
+				h2,
+				h3 {
+
+					font: {
+
+						// family: $klav-semi;
+						family: $indu-bold;
+						// size: 16px;
+						size: 12px;
+						weight: normal;
+
+					}
+
+					text: {
+
+						rendering: $pixper;
+
+					}
+
+					color: $oil;
+
+					-webkit-font-smoothing: $anti;
+
+				}
+
+			}
+
+			.widget-title {
+
+				h3 {
+
+					font: {
+
+						// family: $klav-semi;
+						family: $indu-bold;
+						// size: 14px;
+						size: 12px;
+						weight: normal;
+
+					}
+
+					text: {
+
+						rendering: $pixper;
+
+					}
+
+					color: $oil;
+
+					-webkit-font-smoothing: $anti;
+
+				}
+
+			}
+
+			#wpwrap {
+
+				.widget-inside {
+
+					.widefat {
+
+						border: 1px solid transparentize($navy, 0.875) !important;
+
+					}
+
+				}
+
+				.widgets-holder-wrap {
+
+					// border: none !important;
+
+				}
+
+			}
+
+		}

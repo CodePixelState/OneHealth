@@ -1,0 +1,25 @@
+// stylesheet: homepage panels compiler
+
+	// common panel styles
+		@import 'panel_globals';
+
+	// home panel
+		@import 'panel_homepage';
+
+	// purpose panel
+		@import 'panel_purpose';
+
+	// principles panel
+		@import 'panel_principles';
+
+	// programs panel
+		@import 'panel_programs';
+
+	// programs panel
+		@import 'panel_about';
+
+	// events panel
+		@import 'panel_events';
+
+	// footer panel
+		@import 'panel_footer';

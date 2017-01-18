@@ -1,0 +1,475 @@
+// stylesheet: custom dashboard page styles
+
+	// local variables
+		$adminavy :
+
+			mix(
+
+				$navy,
+				$admin,
+				50%
+
+			)
+
+		;
+
+	// top-level hook
+		.dashboard_page_new-dashboard {
+
+			.wrap {
+
+				height: 100%;
+
+				background-color: transparentize($admin, 0.875);
+
+			}
+
+		}
+
+	// content
+		#dashboard-content {
+
+			padding: 0 24px 0 24px;
+
+			&.uploader-open {
+
+				#homepage-billboard-preview {
+
+					transform: translate3d(0,0,0);
+
+					transition: transform 360ms $zipit 0ms;
+
+				}
+
+			}
+
+		// toolbar buttons
+			#dashboard-toolbar {
+
+				display: flex;
+
+				width: 100%;
+				height: 48px;
+				margin: 0;
+				padding: 0;
+
+				justify-content: flex-end;
+
+				// border: 1px solid $iron;
+
+				ul {
+
+					display: flex;
+
+					margin: 0;
+
+					.toolbar-item {
+
+						display: flex;
+
+						margin: 0 0 0 0;
+
+						&:last-child {
+
+							margin-right: 0;
+
+						}
+
+						a {
+
+							display: flex;
+
+							padding: 0 16px 0 0;
+
+							justify-content: flex-start;
+
+							font-family: $klav-font;
+							font-size: 12px;
+							font-weight: normal;
+
+							line-height: 49px;
+
+							letter-spacing: 0.035em;
+
+							text-transform: $up;
+							text-decoration: none;
+
+							color: transparentize(white, 0.375);
+							background-color: transparentize($adminavy, 0.250);
+
+							transition: $all160;
+
+							&:before {
+
+								content: '';
+
+								display: inline-flex;
+
+								width: 48px;
+								height: 48px;
+								margin: 0 0 0 0;
+								padding: 14px;
+
+								box-sizing: border-box;
+
+								opacity: 0.625;
+
+								background-repeat: no-repeat;
+								background-size: 20px 20px;
+								background-position: 14px 14px;
+
+								transition: $all160;
+
+							}
+
+							&:hover {
+
+								color: white;
+								background-color: $navy;
+
+								&:before {
+
+									opacity: 1.0;
+
+									transition: $all160;
+
+								}
+
+							}
+
+							&:focus {
+
+								box-shadow: none;
+
+							}
+
+						}
+
+					}
+
+					#homepage-billboard {
+
+						a {
+
+							&:before {
+
+								background-image: url(../img/icons/admin/icon_billboard.svg);
+
+							}
+
+						}
+
+					}
+
+					#site-settings {
+
+						a {
+
+							&:before {
+
+								background-image: url(../img/icons/admin/icon_site_settings.svg);
+
+							}
+
+						}
+
+					}
+
+					#manage-media {
+
+						a {
+
+							&:before {
+
+								background-image: url(../img/icons/admin/icon_media_library.svg);
+
+							}
+
+						}
+
+					}
+
+					#upload-media {
+
+						a {
+
+							&:before {
+
+								background-image: url(../img/icons/admin/icon_upload.svg);
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		// embedded media uploader
+			#quick-upload {
+
+				position: relative;
+
+				z-index: -1;
+
+				// display: none;
+
+				height: 240px;
+
+				opacity: 0;
+
+				// transform: translate3d(0,-100%,0);
+				transform: scaleY(0);
+				transform-origin: top left;
+
+				transition:
+
+					transform 240ms $zipit 0ms,
+					  opacity 360ms $zipit 0ms
+
+				;
+
+				&.activated {
+
+					z-index: 1;
+
+					// display: block;
+
+					// height: 240px;
+
+					opacity: 1;
+
+					// transform: translate3d(0,0,0);
+					transform: scaleY(1);
+
+					transition:
+
+						transform 360ms $zipit 0ms,
+						  opacity 120ms $zipit 0ms
+
+					;
+
+				}
+
+				#plupload-upload-ui {
+
+					#drag-drop-area {
+
+						display: flex;
+
+						height: 240px;
+						margin: 16px 0 0 0;
+
+						align-items: center;
+						justify-content: center;
+
+						box-sizing: border-box;
+
+						border: 2px dashed transparentize($admin, 0.875);
+
+						background-color: transparentize($admin, 0.925);
+
+						.drag-drop-inside {
+
+							display: block;
+
+							text-align: center;
+
+							p {
+
+								display: block;
+
+								margin: 0;
+
+								font-family: $prox-font;
+								font-size: 11px;
+								font-weight: normal;
+
+								line-height: 24px;
+
+								text-transform: lowercase;
+
+								&.drag-drop-info {
+
+									font-family: $klav-font;
+									font-size: 28px;
+
+									letter-spacing: 0.075em;
+
+									text-transform: $up;
+									text-rendering: $pixper;
+
+								}
+
+							}
+
+							.drag-drop-buttons {
+
+								display: inline-flex;
+
+								margin: 0;
+
+							}
+
+						}
+
+					}
+
+					.upload-flash-bypass {
+
+						display: inline-flex;
+
+						float: right;
+
+						font-family: $prox-semi;
+						font-size: 10px;
+
+						text-transform: $up;
+
+						color: transparentize($adtext, 0.350);
+
+					}
+
+					.upload-flash-bypass {
+
+						float: right;
+
+						a {
+
+							display: inline-block;
+
+							margin: 0 3px 0 3px;
+
+						}
+
+					}
+
+				}
+
+				.max-upload-size {
+
+					display: inline-flex;
+
+					float: left;
+
+					font-family: $prox-semi;
+					font-size: 10px;
+
+					text-transform: $up;
+
+					color: transparentize($adtext, 0.250);
+
+				}
+
+			}
+
+		// billboard preview
+			#homepage-billboard-preview {
+
+				// display: flex;
+				display: none;
+
+				width: 100%;
+				height: 360px;
+				margin: 0;
+				padding: 0;
+
+				align-items: center;
+
+				box-sizing: border-box;
+
+				transform: translate3d(0,-275px,0);
+
+				transition: transform 240ms $zipit 0ms;
+
+				#feature-content-billboard {
+
+					width: 100%;
+					// height: 100%;
+					margin: 0;
+					padding: 0 24px 0 24px;
+
+					box-sizing: border-box;
+
+					line-height: 64px;
+
+					text-align: left;
+
+					span {
+
+						display: block;
+
+						font-family: $klav-font;
+
+						text-transform: uppercase;
+
+					}
+
+					.headline-text {
+
+						width: 60%;
+
+						font-size: 48px;
+
+						line-height: 54px;
+
+						letter-spacing: 0.065em;
+
+						color: white;
+
+					}
+
+					.subheadline-text {
+
+						width: 45%;
+
+						margin: 8px 0 8px 0;
+
+						font-size: 18px;
+
+						line-height: 24px;
+
+						letter-spacing: 0.065em;
+
+						color: $gold;
+
+					}
+
+					button {
+
+						margin: 0;
+						padding: 0 24px 0 24px;
+
+						border: 1px solid transparentize(white, 1.0);
+
+						font-family: $klav-font;
+						font-size: 14px;
+						font-weight: normal;
+
+						line-height: 48px;
+
+						letter-spacing: 0.075em;
+
+						text-transform: uppercase;
+
+						color: white;
+						background-color: transparentize($red, 0.35);
+
+						transition: all 220ms linear;
+
+						&:hover {
+
+							background-color: transparentize(white, 0.85);
+							border-color: transparentize(white, 0.2);
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

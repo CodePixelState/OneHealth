@@ -1,0 +1,157 @@
+// stylesheet: ui control styles
+
+	// panel controls
+		.fp-controlArrow {
+
+			position: absolute;
+
+			bottom: 0;
+
+			z-index: 500;
+
+			display: block;
+
+			width: 64px;
+			height: 64px;
+			margin: 0;
+			padding: 16px;
+
+			@media #{$small-only} {
+				
+				width: 48px;
+				height: 48px;
+				padding: 8px;
+			
+			}
+
+		}
+
+		.fp-prev,
+		.fp-next {
+
+			background: {
+
+				color:
+
+					adjust-color(
+
+						$navy,
+						$lightness  : 20%,
+						$saturation : -70%,
+						$alpha  	: -0.000
+
+					)
+
+				;
+
+			}
+
+			opacity: 1.000;
+
+			transition: $all220;
+
+			&:after {
+
+				content: '';
+
+				position: absolute;
+
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				z-index: 1;
+
+				width: 64px;
+				height: 64px;
+				margin: 0;
+				padding: 16px;
+
+				background: {
+
+					repeat: no-repeat;
+					size: 32px 32px;
+					position: 16px 16px;
+
+				}
+
+				opacity: 1.000;
+
+				transition: $all220;
+
+				@media #{$small-only} {
+						
+					width: 48px;
+					height: 48px;
+					padding: 8px;
+
+					background-position: 8px 8px;
+				
+				}
+
+			}			
+
+			&:hover {
+
+				background: {
+
+					color: $navy;
+
+				}
+
+				&:after {
+
+					opacity: 1.000;
+
+					transition: $all220;
+
+				}
+
+			}
+
+		}
+
+		.fp-prev {
+
+			left: -64px;
+
+			@media #{$small-only} {
+				
+				left: -48px;
+			
+			}
+
+			&:after {
+
+				background: {
+
+					image: url(../img/icons/UI/icon_arrow_prev.svg);
+
+				}
+
+			}
+
+		}
+
+		.fp-next {
+
+			right: -64px;
+
+			@media #{$small-only} {
+				
+				right: -48px;
+			
+			}
+
+			&:after {
+
+				background: {
+
+					image: url(../img/icons/UI/icon_arrow_next.svg);
+
+				}
+
+			}
+
+		}

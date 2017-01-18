@@ -1,0 +1,61 @@
+#adminmenu {
+
+	.wp-menu-arrow {
+
+		// the emptiness
+
+		div {
+
+			// the emptiness
+
+		}
+
+	}
+
+	.wp-has-current-submenu {
+
+		.wp-submenu {
+
+			.wp-submenu-head {
+
+				// the emptiness
+
+			}
+
+		}
+
+	}
+
+	li {
+
+		&.current {
+
+			a {
+
+				&.menu-top {
+
+
+
+				}
+
+			}
+
+		}
+
+		&.wp-has-current-submenu {
+
+			a {
+
+				&.wp-has-current-submenu {
+
+
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

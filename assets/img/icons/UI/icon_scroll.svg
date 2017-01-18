@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<path id="mouse_3_" fill="#FFFFFF" d="M32,13c3.9,0,7,3.1,7,7v12c0,3.9-3.1,7-7,7h0c-3.9,0-7-3.1-7-7V20C25,16.1,28.1,13,32,13
+	L32,13 M32,12.2c-4.3,0-7.8,3.5-7.8,7.7v12c0,4.3,3.5,7.8,7.8,7.8s7.8-3.5,7.8-7.7V20C39.8,15.7,36.3,12.2,32,12.2L32,12.2z"/>
+<path id="wheel_3_" fill="#FFFFFF" d="M32,17.8c0.4,0,0.8,0.3,0.8,0.8v3c0,0.4-0.3,0.8-0.8,0.8c-0.4,0-0.8-0.3-0.8-0.8v-3
+	C31.2,18.1,31.6,17.8,32,17.8 M32,17c-0.8,0-1.5,0.7-1.5,1.5v3c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5v-3C33.5,17.7,32.8,17,32,17
+	L32,17z"/>
+<polygon fill="#FFFFFF" points="32,52.5 27.5,48 28,47.5 32,51.5 36,47.5 36.5,48 "/>
+</svg>

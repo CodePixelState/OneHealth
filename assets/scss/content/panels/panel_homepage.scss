@@ -1,0 +1,584 @@
+// stylesheet: home panel styles
+
+	// top-level hook
+		#home-panel {
+
+		// UI elements
+			.left-toolbar {
+
+				background: {
+
+					color: transparentize(white, 0.895);
+
+					image:
+
+						linear-gradient(
+
+							0deg,
+							adjust-color(
+
+								$navy,
+								$hue 		: 7.5%,
+								$lightness  : -9.5%,
+								$saturation : -10%,
+								$alpha  	: -0.285
+
+							) 0%,
+							transparentize($navy, 1.000) 60%,
+							transparentize($navy, 1.000) 100%
+
+						)
+
+					;
+
+				}
+
+			}
+
+			.right-toolbar {
+
+				background: {
+
+					color: transparentize(white, 0.705);
+
+					image:
+
+						linear-gradient(
+
+							180deg,
+							adjust-color(
+
+								$green,
+								$lightness  : -15%,
+								$saturation : 0%,
+								$alpha  	: -0.145
+
+							) 0%,
+							transparentize($green, 1.000) 60%,
+							transparentize($green, 1.000) 100%
+
+						)
+
+					;
+
+				}
+
+			}
+
+			.panel-label {
+
+				color: transparentize(white, 0.145);
+
+			}
+
+			.panel-footer {
+
+				background: {
+
+					color: transparentize($ogold, 1.000);
+
+				}
+
+			}
+
+		// UI helper FX
+			#scroll-indicator {
+
+				position: absolute;
+
+				z-index: 100;
+
+				&.toolbar {
+
+					right: 31px;
+					bottom: 64px;
+
+					width: 2px;
+					height: 78px;
+					margin: 0;
+					padding: 0;
+
+					@media #{$small-only} {
+						
+						right: 23px;
+						bottom: 64px;
+					
+					}
+
+					.light {
+
+						width: 2px;
+						height: 1px;
+						margin: 10px 0 0 0;
+						padding: 0;
+
+						animation: {
+
+							name: scrollTip;
+							duration: 1600ms;
+							timing-function: ease-in-out;
+							iteration-count: 7;
+							direction: normal;
+							fill-mode: backwards;
+
+						}
+
+					}
+
+				}
+
+				&.panel {
+
+					right: calc(50% - 1px);
+					bottom: 192px;
+
+					width: 2px;
+					height: 96px;
+					margin: 0;
+					padding: 0;
+
+					@media #{$small-only} {
+						
+						bottom: 96px;
+					
+					}
+
+					.light {
+
+						width: 2px;
+						height: 1px;
+						margin: 10px 0 0 0;
+						padding: 0;
+
+						animation: {
+
+							name: scrollPulse;
+							duration: 1600ms;
+							timing-function: ease-in-out;
+							iteration-count: 13;
+							direction: normal;
+							fill-mode: backwards;
+
+						}
+
+					}
+
+				}
+
+				.light {
+
+					display: block;
+
+					width: 2px;
+					height: 1px;
+					margin: 10px 0 0 0;
+					padding: 0;
+
+					opacity: 0.000;
+
+					background: {
+
+						color: white;
+
+					}
+
+					animation: {
+
+						name: scrollTip;
+						duration: 1600ms;
+						timing-function: ease-in-out;
+						iteration-count: 13;
+						direction: normal;
+						fill-mode: backwards;
+
+					}
+
+					&:first-child {
+
+						margin-top: 0;
+
+					}
+
+					&:nth-child(1) {
+
+						animation: {
+
+							delay: 120ms;
+
+						}
+
+					}
+
+					&:nth-child(2) {
+
+						animation: {
+
+							delay: 240ms;
+
+						}
+
+					}
+
+					&:nth-child(3) {
+
+						animation: {
+
+							delay: 360ms;
+
+						}
+
+					}
+
+					&:nth-child(4) {
+
+						animation: {
+
+							delay: 480ms;
+
+						}
+
+					}
+
+					&:nth-child(5) {
+
+						animation: {
+
+							delay: 600ms;
+
+						}
+
+					}
+
+					&:nth-child(6) {
+
+						animation: {
+
+							delay: 720ms;
+
+						}
+
+					}
+
+					&:nth-child(7) {
+
+						animation: {
+
+							delay: 840ms;
+
+						}
+
+					}
+
+					&:nth-child(8) {
+
+						animation: {
+
+							delay: 960ms;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			#scroll-icon {
+
+				z-index: 200;
+
+				width: 64px;
+				height: 64px;
+				padding: 0;
+
+				svg {
+
+					width: 64px;
+					height: 64px;
+
+					transition: $all220;
+
+				}
+
+				&.toolbar {
+
+					position: fixed;
+
+					bottom: 0;
+					left: 0;
+
+					z-index: 200;
+
+					margin: 0;
+
+					opacity: 0.765;
+
+					@media #{$small-only} {
+						
+						left: -8px;
+					
+					}
+
+				}
+
+				&.panel {
+
+					display: none;
+
+					position: absolute;
+
+					right: 50%;
+					bottom: 144px;
+
+					margin: 0 -32px 0 0;
+
+					opacity: 0.765;
+
+					animation: {
+
+						name: mousePulse;
+						duration: 1600ms;
+						timing-function: ease-in-out;
+						iteration-count: 7;
+						direction: normal;
+						fill-mode: backwards;
+						delay: 840ms;
+
+					}
+
+				}
+
+				&.fadeAway {
+
+					opacity: 0.000;
+
+					transition: opacity 220ms linear 0ms;
+
+				}
+
+			}
+
+			#title-panel {
+
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				text-align: center;
+
+				@media #{$small-only} {
+					
+					display: flex;
+
+					height: 100%;
+					min-height: 100%;
+				
+				}
+
+				header {
+
+					margin: 48px 0 16px 0;
+
+				}
+
+				.title {
+
+					position: relative;
+
+					margin: 0 -8px 0 0;
+					padding: 0;
+
+					font: {
+
+						family: $prox-bold;
+						size: 48px;
+						weight: normal;
+
+					}
+
+					line-height: 48px;
+
+					letter-spacing: 0.215em;
+
+					text: {
+
+						align: center;
+						transform: $up;
+						rendering: $pixper;
+
+					}
+
+					color: white;
+
+					@media #{$small-only} {
+						
+						font: {
+
+							size: 32px;
+
+						}
+					
+					}
+
+				}
+
+				.subtitle {
+
+					margin: 0 -6px 0 0;
+					padding: 0;
+
+					font: {
+
+						family: $prox-bold;
+						size: 24px;
+						weight: normal;
+
+					}
+
+					line-height: 32px;
+
+					letter-spacing: 0.765em;
+
+					text: {
+
+						align: center;
+						transform: $up;
+						rendering: $pixper;
+
+					}
+
+					color: transparentize(white, 0.185);
+
+					@media #{$small-only} {
+						
+						font: {
+
+							size: 18px;
+
+						}
+
+						line-height: 24px;
+
+						// letter-spacing: 0.525em;
+					
+					}
+
+				}
+
+				p {
+
+					margin: 0;
+
+					font: {
+
+						family: $klav-nemi;
+						size: 12px;
+						weight: normal;
+
+					}
+
+					line-height: 18px;
+
+					letter-spacing: 0.095em;
+
+					text: {
+
+						transform: $up;
+						rendering: $pixper;
+
+					}
+
+					color: white;
+
+					@media #{$small-only} {
+						
+						margin: 0 16px 0 16px;
+
+						font: {
+
+							size: 10px;
+
+						}
+
+						line-height: 18px;
+
+						letter-spacing: 0.075em;
+					
+						br {
+
+							display: none;
+
+						}
+
+					}
+
+				}
+
+				.homepage-panel-button {
+
+					position: relative;
+
+					z-index: 100;
+
+					display: inline-block;
+
+					width: 160px;
+					height: 48px;
+					margin: 32px 0 64px 0;
+					// padding: 1px 32px 0 32px;
+					padding: 0;
+
+					border: 1px solid $yellow;
+					// border: 1px solid white;
+
+					font: {
+
+						family: $klav-nemi;
+						size: 12px;
+						weight: normal;
+
+					}
+
+					line-height: 48px;
+
+					letter-spacing: 0.085em;
+
+					text: {
+
+						align: center;
+						transform: $up;
+						rendering: $pixper;
+
+					}
+
+					color: white;
+
+					background: {
+
+						color: transparentize(white, 0.915);
+						// color: transparentize($green, 0.375)
+
+					}
+
+					transition:
+
+						border-color 160ms linear 0ms,
+						background 220ms linear 0ms
+
+					;
+
+					&:hover {
+
+						border-color: white;
+						// border-color: $yellow;
+
+						background-color: transparentize($green, 0.375);
+						// background-color: transparentize(white, 0.915);
+
+					}
+
+				}
+
+			}
+
+		}

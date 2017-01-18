@@ -1,0 +1,34 @@
+// stylesheet: homepage billboard admin
+	
+	// top-level hook
+		.toplevel_page_homepage-billboard,
+		.appearance_page_homepage-billboard {
+
+		// framework hook
+			#theme-framework {
+
+				// background-color: 
+
+				// 	adjust-color( $navy,
+
+				// 		$lightness  : 10%,
+				// 		$saturation : -50%,
+				// 		$alpha 		: -0.850
+
+				// 	)
+
+				// ;
+
+				#post-body {
+
+					#post-body-content {
+
+						background-color: $lights;
+
+					}
+
+				}
+
+			}
+
+		}

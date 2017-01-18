@@ -1,0 +1,31 @@
+// stylesheet: forms and inupt elements
+
+	// radio buttons
+		input[type="radio"] {
+			
+			// border-radius: 0px;
+		
+			&:checked {
+
+				// border-radius: 0px;
+
+				&:before {
+
+					// border-radius: 0px;
+
+					background-color: lighten($navy, 5%);
+
+				}
+
+			}
+
+		}
+
+	// search field
+		.search-box input[name="s"],
+		.tablenav .search-plugins input[name="s"],
+		.tagsdiv .newtag {
+
+			height: 32px;
+
+		}

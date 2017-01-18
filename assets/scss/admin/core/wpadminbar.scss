@@ -1,0 +1,1076 @@
+// stylesheet: wpadminbar styles
+ 
+	// top-level hook
+		#wpadminbar {
+
+			top: 0;
+			right: 0;
+			left: 0;
+
+			display: flex;
+
+			height: 48px;
+
+			flex-direction: row;
+
+			justify-content: flex-start;
+
+			line-height: 48px;
+
+			background-color: $nite;
+
+		// un-fuck WP defaults because they inexplicably used the godforsaken universal selector
+			* {
+
+				// -webkit-font-smoothing: antialiased;
+
+			}
+
+		// wp-toolbar
+			#wp-toolbar {
+
+				display: flex;
+
+				width: 100%;
+
+			// menu globals
+				#wp-admin-bar-root-default,
+				#wp-admin-bar-top-secondary {
+
+					display: inline-flex;
+
+					height: 48px;
+
+					align-items: center;
+
+					li {
+
+						display: flex;
+
+						align-items: center;
+
+						a {
+
+							display: inline-flex;
+
+							height: 48px;
+
+							align-items: center;
+
+							font-family: $prox-font;
+							font-size: 10px;
+							font-weight: normal;
+
+							line-height: 48px;
+
+							letter-spacing: 0.025;
+
+							text-transform: $up;
+
+							text-rendering: $pixper !important;
+
+							-moz-osx-font-smoothing: grayscale;
+
+							-webkit-font-smoothing: $anti;
+
+							&:before {
+
+								top: auto;
+
+								padding: 0;
+
+							}
+
+							span {
+
+								&.ab-icon,
+							    &.ab-label {
+
+							    	display: inline-flex;
+
+							    	height: 20px;
+									padding: 0;
+
+									align-items: center;
+
+									line-height: 20px;
+
+									&:before {
+
+										top: 0;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+					.menupop {
+
+						.ab-sub-wrapper {
+
+							top: 48px;
+
+							box-shadow: none !important;
+
+						}
+
+					}
+
+				}
+
+			// left menu
+				#wp-admin-bar-root-default {
+
+					z-index: 100;
+
+					align-self: flex-start;
+
+					flex-grow: 10;
+
+					order: 1;
+
+				// custom hhs logo
+					#wp-admin-bar-hhs-wordpress {
+
+						.ab-empty-item {
+
+							display: flex;
+
+							height: 48px;
+							padding: 0;
+
+							background-color: transparentize(white, 0.955);
+
+							&:before {
+
+								content: '';
+
+								display: block;
+
+								width: 32px;
+								height: 32px;
+								margin: 0 0 0 0;
+								padding: 8px;
+
+								background-color: transparentize(white, 0.945);
+
+								background-image: url(../img/icons/admin/icon_onehealth.svg) !important;
+								background-repeat: no-repeat;
+								background-size: 32px 32px;
+								background-position: 8px 8px;
+
+							}
+
+							.title-block {
+
+								height: 47px;
+								margin: 0;
+								padding: 1px 16px 0 16px;
+
+								span {
+
+									// font-family: $indu-demi;
+									font: {
+
+										family: $indu-bold;
+										size: 16px;
+										weight: normal;
+
+									}
+
+									line-height: 48px;
+
+									letter-spacing: 0.045em;
+
+									text: {
+
+										transform: $up;
+										rendering: $pixper;
+
+									}
+
+									color: white;
+
+									-webkit-font-smoothing: antialiased;
+
+									&.gold {
+
+										color: $gold;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				// WP updates available
+					#wp-admin-bar-updates {
+
+						position: relative;
+
+						justify-content: center;
+
+						width: 48px;
+						padding: 0;
+
+						background-color: transparentize($navy, 0.325);
+
+						transition: $all160;
+
+						&:hover {
+
+							background-color: $navy;
+
+						}
+
+						&:before {
+
+							content: '';
+
+							position: absolute;
+
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+
+							z-index: 1;
+
+							width: 48px;
+							height: 48px;
+							margin: 0;
+							padding: 0;
+
+							// opacity: 0;
+
+							background-image: url(../img/icons/admin/icon_updates.svg);
+							background-repeat: no-repeat;
+							background-size: 32px 32px;
+							background-position: 8px 8px;
+
+						}
+
+						.ab-item {
+
+							position: relative;
+
+							z-index: 2;
+
+							justify-content: center;
+
+							width: 24px;
+							height: 24px;
+							margin: 12px;
+							padding: 0;
+
+							font-family: $indu-bold;
+							font-size: 11px;
+							font-weight: normal;
+
+							line-height: 24px;
+
+							text-align: center;
+							text-rendering: $pixper;
+
+							-webkit-font-smoothing: antialiased;
+
+							color: white;
+							background-color: transparent;
+
+							transition: $all160;
+
+							&:hover {
+
+								background-color: transparent;
+
+							}
+
+						}
+
+					}
+
+				}
+
+			// right menu
+				#wp-admin-bar-top-secondary {
+
+					align-self: flex-end;
+					align-items: center;
+
+					order: 2;
+
+					.stays-open {
+
+						.ab-sub-wrapper {
+
+							display: block !important;
+
+						}
+
+					}
+
+				// site name and link
+					#wp-admin-bar-site-name {
+
+						.ab-item {
+
+							height: 47px;
+							padding: 1px 16px 0 16px;
+
+							font-family: $prox-semi;
+							font-size: 12px;
+							font-weight: normal;
+
+							line-height: 48px;
+
+							letter-spacing: 0.075em;
+
+							text-transform: $up;
+
+							color: white;
+							background: {
+
+								color:
+
+									adjust-color(
+
+										$navy,
+										$lightness  : -5%,
+										$saturation : -5%,
+										$alpha 		: -0.435
+
+									)
+
+								;
+
+							}
+
+							transition: $all220;
+
+							-webkit-font-smoothing: antialiased;
+
+							&:hover {
+
+								background-color: lighten($navy, 1%);
+
+							}
+
+							&:before {
+
+								content: '';
+
+								display: none;
+
+							}
+
+						}
+
+						.ab-sub-wrapper {
+
+							display: none !important;
+
+						}
+
+					}
+
+				// account
+					#wp-admin-bar-my-account {
+
+						order: 2;
+
+						#account-menu {
+
+							position: static;
+
+							top: auto;
+							right: auto;
+							left: auto;
+
+							display: block !important;
+
+							min-width: 0;
+
+							background-color: $canvas;
+
+						}
+
+						&.with-avatar {
+
+							.ab-item {
+
+								padding: 0;
+
+								order: 2;
+
+								font-family: $klav-font;
+								font-size: 12px;
+
+								img {
+
+									display: inline-block;
+
+									width: 48px;
+									height: 48px;
+									margin: 0;
+									padding: 0;
+
+									border: none;
+
+									line-height: 48px;
+
+									&.avatar-26 {
+
+										display: none;
+
+									}
+
+								}
+
+							}
+
+						}
+
+						.ab-item {
+
+							padding: 0 0 0 16px;
+
+						}
+
+						.ab-sub-wrapper {
+
+							top: 0;
+							right: 48px;
+
+						}
+
+						#wp-admin-bar-user-actions {
+
+							display: flex;
+
+							width: auto;
+							height: 48px;
+
+							flex-direction: row;
+
+							box-sizing: border-box;
+
+							&.ab-submenu {
+
+								padding: 0;
+
+							}
+
+							li {
+
+								margin: 0;
+
+								.ab-item {
+
+									min-width: 0;
+									padding: 0 16px 0 16px;
+
+									transition: $all220;
+
+								}
+
+							}
+
+							#wp-admin-bar-user-info {
+
+								order: 3;
+
+								background: {
+
+									color:
+
+										adjust-color(
+
+											$turqish,
+											$lightness  : -3.5%,
+											$saturation : -5%,
+											$alpha 		: -0.365
+
+										)
+
+									;
+
+								}
+
+								transition: $all220;
+
+								&:hover {
+
+									background: {
+
+										color:
+
+											adjust-color(
+
+												$turqish,
+												$lightness  : 3.5%,
+												$saturation : 0%,
+												$alpha 		: -0.135
+
+											)
+
+										;
+
+									}
+
+								}
+
+								a {
+
+									display: inline-flex;
+
+									height: auto;
+
+									flex-direction: column;
+
+									align-items: center;
+
+									text-align: right;
+
+								}
+
+								img.avatar {
+
+									display: none;
+
+								}
+
+								span {
+
+									display: inline-flex;
+
+									// width: 100%;
+									height: auto;
+
+									line-height: 12px;
+
+									text-align: right;
+
+									color: white;
+
+									text-rendering: $pixper !important;
+
+									-moz-osx-font-smoothing: grayscale;
+
+									-webkit-font-smoothing: $anti;
+
+								}
+
+								.display-name {
+
+									font-family: $indu-bold;
+									font-size: 11px;
+
+									letter-spacing: 0.025em;
+
+									text-transform: $up;
+
+								}
+
+								.username {
+
+									font-size: 10px;
+
+									font-family: $indu-demi;
+
+									letter-spacing: 0.025em;
+
+									color: $gold;
+
+								}
+
+							}
+
+							#wp-admin-bar-edit-profile {
+
+								order: 1;
+
+								.ab-item {
+
+									background-color:
+
+										adjust-color(
+
+											$green,
+											$lightness  : -5%,
+											$saturation : -5%,
+											$alpha 		: -0.3650
+
+										)
+
+									;
+
+									&:before {
+
+										background-image: url(../img/icons/admin/icon_profile.svg) !important;
+
+									}
+
+								}
+
+								&:hover {
+
+									.ab-item {
+
+										background-color: transparentize($green, 0.065);
+
+									}
+
+								}
+
+							}
+
+							#wp-admin-bar-logout {
+
+								order: 2;
+
+								.ab-item {
+
+									background-color:
+
+										adjust-color(
+
+											$yellow,
+											$lightness  : -10%,
+											$saturation : -5%,
+											$alpha 		: -0.435
+
+										)
+
+									;
+
+									&:before {
+
+										background-image: url(../img/icons/admin/icon_logout.svg) !important;
+
+									}
+
+								}
+
+								&:hover {
+
+									.ab-item {
+
+										background-color:
+
+											adjust-color(
+
+												$yellow,
+												$lightness  : -5%,
+												$saturation : -2.5%,
+												$alpha 		: -0.235
+
+											)
+
+										;
+
+									}
+
+								}
+
+							}
+
+							#wp-admin-bar-edit-profile,
+							#wp-admin-bar-logout {
+
+								&:hover {
+
+									a {
+
+										color: white;
+
+										transition: $all220;
+
+										&:before {
+
+											opacity: 1.0;
+
+											transition: $all220;
+
+										}
+
+									}
+
+								}
+
+								.ab-item {
+
+									padding: 0 14px 0 14px;
+
+									&:before {
+
+										content: '';
+
+										width: 20px;
+										height: 20px;
+										margin: 0;
+										padding: 0;
+
+										opacity: 0.850;
+
+										background-repeat: no-repeat;
+										background-size: 20px 20px;
+										background-position: 0px 0px;
+
+										transition: $all220;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				// custom help button
+					#wp-admin-bar-help-button {
+
+						.ab-item {
+
+							width: 48px;
+							height: 48px;
+							margin: 0;
+							padding: 0;
+
+							background-color:
+
+								adjust-color(
+
+									$yellow,
+									$lightness  : -20%,
+									$saturation : -20%,
+									$alpha 		: 0.450
+
+								)
+
+							;
+
+							transition: $all220;
+
+							&:hover {
+
+								background-color: transparentize($yellow, 0.185);
+
+							}
+
+							&:before {
+
+								content: '';
+
+								width: 20px;
+								height: 20px;
+								margin: 0;
+								padding: 14px;
+
+								background-image: url(../img/icons/admin/icon_help.svg) !important;
+								background-repeat: no-repeat;
+								background-size: 20px 20px;
+								background-position: 14px 14px;
+
+							}
+
+						}
+
+					}
+
+				// network sites
+					#wp-admin-bar-my-sites {
+
+						// order: 1;
+
+						.ab-item {
+
+							padding: 0;
+
+							&:before {
+
+								content: '';
+
+								display: block;
+
+								width: 20px;
+								height: 20px;
+								margin: 0;
+								padding: 14px;
+
+								background-image: url(../img/icons/admin/icon_sites.svg) !important;
+								background-repeat: no-repeat;
+								background-size: 20px 20px;
+								background-position: 14px 14px;
+
+							}
+
+						}
+
+						#sites-dropdown {
+
+							color: transparentize(white, 0.325);
+							background-color:
+
+								adjust-color(
+
+									$orange,
+									$lightness  : -20%,
+									$saturation : -20%,
+									$alpha 		: 0.450
+
+								)
+
+							;
+
+							transition: $all220;
+
+							&:hover {
+
+								color: white;
+								background-color: transparentize($orange, 0.250);
+
+							}
+
+						}
+
+						#sites-menu {
+
+							width: 256px;
+
+							.ab-item {
+
+								padding: 0;
+
+								line-height: 48px;
+
+								&:before {
+
+									content: '';
+
+								}
+
+							}
+
+							#wp-admin-bar-my-sites-super-admin,
+							#wp-admin-bar-my-sites-list {
+
+								padding: 0;
+
+								background-color:
+
+									mix(
+
+										darken($navy, 3%),
+										$admin,
+										40%
+
+									)
+
+								;
+
+								li {
+
+									padding: 0;
+
+									.ab-item {
+
+										width: 100%;
+										min-width: 0;
+										height: 48px;
+										padding: 0 12px 0 12px;
+
+										// font-family: $klav-semi;
+										font-family: $indu-demi;
+										// font-size: 12px;
+										font-size: 11px;
+
+										line-height: 48px;
+
+										color: transparentize(white, 0.350);
+
+										transition: $all160;
+
+										&:before {
+
+											position: static;
+
+											top: auto;
+											right: auto;
+											left: auto;
+
+											display: flex;
+											display: none;
+
+											padding: 14px;
+
+										}
+
+										&:hover {
+
+											color: white;
+
+										}
+
+										.blavatar {
+
+											display: none;
+
+										}
+
+									}
+
+								}
+
+							}
+
+							#wp-admin-bar-my-sites-super-admin {
+
+								#wp-admin-bar-network-admin {
+
+									background-color:
+
+										adjust-color(
+
+											$orange,
+											$lightness  : -20%,
+											$saturation : -20%,
+											$alpha 		: 0.350
+
+										)
+
+									;
+
+									transition: $all160;
+
+									&:hover {
+
+										background-color: transparentize($orange, 0.150);
+
+										.ab-item {
+
+											color: white;
+
+										}
+
+									}
+
+									.ab-sub-wrapper {
+
+										top: 32px;
+
+										#wp-admin-bar-network-admin-default {
+
+											width: 128px;
+											padding: 0;
+
+											li {
+
+												background-color: transparent;
+
+												transition: $all220;
+
+												&:hover {
+
+													background-color: transparentize(white, 0.915);
+
+												}
+
+											}
+
+										}
+
+									}
+
+								}
+
+								li {
+
+									.ab-item {
+
+										&:before {
+
+											background-image: url(../img/icons/admin/icon_network_admin.svg) !important;
+
+										}
+
+									}
+
+								}
+
+							}
+
+							#wp-admin-bar-my-sites-list {
+
+								li {
+
+									height: 48px;
+
+									flex-direction: row;
+
+									align-items: flex-start;
+
+									line-height: 48px;
+
+									.ab-item {
+
+										&:hover {
+
+											background-color: transparentize($green, 0.250);
+
+										}
+
+									}
+
+								}
+
+								.site-sub-menu {
+
+									display: none !important;
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		// CSU brand
+			#state-brand {
+
+				display: flex;
+
+				width: 64px;
+				height: 64px;
+
+				background-color: transparentize(white, 0.925);
+
+				a {
+
+					width: 64px;
+					height: 64px;
+					margin: 0;
+					padding: 8px;
+
+					box-sizing: border-box;
+
+				}
+
+			}
+
+		}

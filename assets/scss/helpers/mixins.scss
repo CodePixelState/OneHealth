@@ -1,0 +1,532 @@
+
+// stylesheet: mixins and constants
+
+
+	// ----- TOOLS ----- //
+
+		// the emptiness
+
+	// ------------------------------ //
+
+
+
+	// ----- BUTTONS ----- //
+
+		// the emptiness
+
+	// ------------------------------ //
+
+
+
+	// ----- TYPOGRAPHY ----- //
+
+		// Exo 2
+			@font-face {
+			    
+			    font-family: 'exo_2medium';
+			    	src: url('../fonts/exo/Exo2-Medium-webfont.eot');
+			    	src: url('../fonts/exo/Exo2-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/exo/Exo2-Medium-webfont.woff') format('woff'),
+			         url('../fonts/exo/Exo2-Medium-webfont.ttf') format('truetype'),
+			         url('../fonts/exo/Exo2-Medium-webfont.svg#exo_2medium') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'exo_2bold';
+			    
+				    src: url('../fonts/exo/Exo2-Bold-webfont.eot');
+				    src: url('../fonts/exo/Exo2-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+				         url('../fonts/exo/Exo2-Bold-webfont.woff') format('woff'),
+				         url('../fonts/exo/Exo2-Bold-webfont.ttf') format('truetype'),
+				         url('../fonts/exo/Exo2-Bold-webfont.svg#exo_2bold') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+		// Klavika
+			@font-face {
+			
+			  	font-family: 'Klavika_CondLight';
+			  		src: url('../fonts/klavika/Klavika-LightCondensed.eot?#iefix') format('embedded-opentype'),
+			  			 url('../fonts/klavika/Klavika-LightCondensed.otf')  format('opentype'),
+				     	 url('../fonts/klavika/Klavika-LightCondensed.woff') format('woff'),
+				     	 url('../fonts/klavika/Klavika-LightCondensed.ttf')  format('truetype'),
+				     	 url('../fonts/klavika/Klavika-LightCondensed.svg#Klavika-LightCondensed') format('svg');
+			  	font-weight: normal;
+			  	font-style: normal;
+			
+			}
+
+			@font-face {
+
+			    font-family: 'Klavika_CondReg';
+			    	src: url('../fonts/klavika/KlavikaWebRegularCond.eot');
+			    	src: url('../fonts/klavika/KlavikaWebRegularCond.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/klavika/KlavikaWebRegularCondensed.woff') format('woff'),
+			         url('../fonts/klavika/Klavika-RegularCond.otf') format('opentype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+
+			    font-family: 'Klavika_CondMed';
+			    	src: url('../fonts/klavika/KlavikaWebMediumCond.eot');
+			    	src: url('../fonts/klavika/KlavikaWebMediumCond.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/klavika/KlavikaWebMediumCondensed.woff') format('woff'),
+			         url('../fonts/klavika/Klavika-MediumCond.otf') format('opentype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+
+			    font-family: 'Klavika_CondBold';
+			    	src: url('../fonts/klavika/KlavikaWebBoldCond.eot');
+			    	src: url('../fonts/klavika/KlavikaWebBoldCond.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/klavika/KlavikaWebBoldCondensed.woff') format('woff'),
+			         url('../fonts/klavika/Klavika-BoldCond.otf') format('opentype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+
+			    font-family: 'Klavika_CondBold_Italic';
+			    	src: url('../fonts/klavika/KlavikaWebBoldCondItalic.eot');
+			    	src: url('../fonts/klavika/KlavikaWebBoldCondItalic.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/klavika/KlavikaWebBoldCondensedItalic.woff') format('woff'),
+			         url('../fonts/klavika/Klavika-BoldCondItalic.otf') format('opentype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+
+			    font-family: 'Klavika_CondReg_Italic';
+			    	src: url('../fonts/klavika/KlavikaWebRegularCondItalic.eot');
+			    	src: url('../fonts/klavika/KlavikaWebRegularCondItalic.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/klavika/KlavikaWebRegularCondensedItalic.woff') format('woff'),
+			         url('../fonts/klavika/Klavika-RegularCondItalic.otf') format('opentype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+				
+				font-family: 'Klavika-Regular';
+					src: url('../fonts/klavika/Klavika-Regular.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/klavika/Klavika-Regular.otf')  format('opentype'),
+						 url('../fonts/klavika/Klavika-Regular.woff') format('woff'),
+						 url('../fonts/klavika/Klavika-Regular.ttf')  format('truetype'),
+						 url('../fonts/klavika/Klavika-Regular.svg#Klavika-Regular') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+
+			@font-face {
+				
+				font-family: 'Klavika-Medium';
+					src: url('../fonts/klavika/Klavika-Medium.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/klavika/Klavika-Medium.otf')  format('opentype'),
+						 url('../fonts/klavika/Klavika-Medium.woff') format('woff'),
+						 url('../fonts/klavika/Klavika-Medium.ttf')  format('truetype'),
+						 url('../fonts/klavika/Klavika-Medium.svg#Klavika-Medium') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+			@font-face {
+				
+				font-family: 'Klavika-Bold';
+				 	src: url('../fonts/klavika/Klavika-Bold.eot?#iefix') format('embedded-opentype'),
+				 		 url('../fonts/klavika/Klavika-Bold.otf')  format('opentype'),
+					     url('../fonts/klavika/Klavika-Bold.woff') format('woff'),
+					     url('../fonts/klavika/Klavika-Bold.ttf')  format('truetype'),
+					     url('../fonts/klavika/Klavika-Bold.svg#Klavika-Bold') format('svg');
+				font-weight: normal;
+				font-style: normal;
+				
+			}
+
+		// Proxima Nova
+			@font-face {
+
+				font-family: 'Proxima_Nova_Light';
+					src: url('../fonts/proxima_nova/proximanova-light-webfont.eot');
+					src: url('../fonts/proxima_nova/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/proximanova-light-webfont.woff') format('woff'),
+						 url('../fonts/proxima_nova/proximanova-light-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+			@font-face {
+
+				font-family: 'Proxima_Nova_Regular'; 
+					src: url('../fonts/proxima_nova/proximanova-regular-webfont.eot');
+					src: url('../fonts/proxima_nova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/proximanova-regular-webfont.woff') format('woff'),
+						 url('../fonts/proxima_nova/proximanova-regular-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+			@font-face {
+
+				font-family: 'Proxima_Nova_Semibold';
+					src: url('../fonts/proxima_nova/proximanova-semibold-webfont.eot');
+					src: url('../fonts/proxima_nova/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/proximanova-semibold-webfont.woff') format('woff'),
+						 url('../fonts/proxima_nova/proximanova-semibold-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+				    
+			@font-face {
+
+				font-family: 'Proxima_Nova_Bold';
+					src: url('../fonts/proxima_nova/proximanova-bold-webfont.eot');
+					src: url('../fonts/proxima_nova/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/proximanova-bold-webfont.woff') format('woff'),
+						 url('../fonts/proxima_nova/proximanova-bold-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+					
+			@font-face {
+
+				font-family: 'Proxima_Nova_Thin';
+					src: url('../fonts/proxima_nova/proximanova-thin-webfont.eot');
+					src: url('../fonts/proxima_nova/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/proximanova-thin-webfont.woff') format('woff'),
+						 url('../fonts/proxima_nova/proximanova-thin-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+			@font-face {
+
+				font-family: 'Proxima_Nova_Black';
+					src: url('../fonts/proxima_nova/proximanova-black-webfont.eot');
+					src: url('../fonts/proxima_nova/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/proximanova-black-webfont.woff') format('woff'),
+						 url('../fonts/proxima_nova/proximanova-black-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+				    
+			@font-face {
+
+				font-family: 'Proxima_Nova_Extra_Bold';
+					src: url('../fonts/proxima_nova/proximanova-extrabold-webfont.eot');
+					src: url('../fonts/proxima_nova/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/proximanova-extrabold-webfont.woff2') format('woff2'),
+						 url('../fonts/proxima_nova/proximanova-extrabold-webfont.woff') format('woff'),
+						 url('../fonts/proxima_nova/proximanova-extrabold-webfont.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+			@font-face {
+				
+				font-family: 'ProximaNova-BoldIt';
+					src: url('../fonts/proxima_nova/ProximaNova-BoldIt.eot');
+					src: url('../fonts/proxima_nova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/proxima_nova/ProximaNova-BoldIt.otf')  format('opentype'),
+						 url('../fonts/proxima_nova/ProximaNova-BoldIt.woff') format('woff'),
+						 url('../fonts/proxima_nova/ProximaNova-BoldIt.ttf')  format('truetype'),
+						 url('../fonts/proxima_nova/ProximaNova-BoldIt.svg#ProximaNova-BoldIt') format('svg');
+				font-weight: normal;
+				font-style: normal;
+				
+			}
+
+		// Vitesse
+			@font-face {
+
+				font-family: 'Vitesse_Medium';
+					src: url('../fonts/vitesse/Vitesse-Medium.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/vitesse/Vitesse-Medium.otf')  format('opentype'),
+						 url('../fonts/vitesse/Vitesse-Medium.woff') format('woff'),
+						 url('../fonts/vitesse/Vitesse-Medium.ttf')  format('truetype'),
+						 url('../fonts/vitesse/Vitesse-Medium.svg#Vitesse-Medium') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			
+			}
+
+			@font-face {
+				
+				font-family: 'Vitesse_Book';
+					src: url('../fonts/vitesse/Vitesse-Book.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/vitesse/Vitesse-Book.otf')  format('opentype'),
+						 url('../fonts/vitesse/Vitesse-Book.woff') format('woff'), url('Vitesse-Book.ttf')  format('truetype'),
+						 url('../fonts/vitesse/Vitesse-Book.svg#Vitesse-Book') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			
+			}
+
+			@font-face {
+
+				font-family: 'Vitesse_Bold';
+					src: url('../fonts/vitesse/Vitesse-Bold.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/vitesse/Vitesse-Bold.otf')  format('opentype'),
+				     	 url('../fonts/vitesse/Vitesse-Bold.woff') format('woff'),
+				     	 url('../fonts/vitesse/Vitesse-Bold.ttf')  format('truetype'),
+				     	 url('../fonts/vitesse/Vitesse-Bold.svg#Vitesse-Light') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+			@font-face {
+
+				font-family: 'Vitesse_Light';
+					src: url('../fonts/vitesse/Vitesse-Light.eot?#iefix') format('embedded-opentype'),
+						 url('../fonts/vitesse/Vitesse-Light.otf')  format('opentype'),
+				     	 url('../fonts/vitesse/Vitesse-Light.woff') format('woff'),
+				     	 url('../fonts/vitesse/Vitesse-Light.ttf')  format('truetype'),
+				     	 url('../fonts/vitesse/Vitesse-Light.svg#Vitesse-Light') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+			}
+
+		// Industry
+			@font-face {
+
+			    font-family: 'industrybold';
+			    	src: url('../fonts/industry/Industry-Bold-webfont.eot');
+			    	src: url('../fonts/industry/Industry-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('../fonts/industry/Industry-Bold-webfont.woff') format('woff'),
+			        	 url('../fonts/industry/Industry-Bold-webfont.ttf') format('truetype'),
+			        	 url('../fonts/industry/Industry-Bold-webfont.svg#industrybold') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrybook';
+			    	src: url('../fonts/industry/Industry-Book-webfont.eot');
+			    	src: url('../fonts/industry/Industry-Book-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('../fonts/industry/Industry-Book-webfont.woff') format('woff'),
+			        	 url('../fonts/industry/Industry-Book-webfont.ttf') format('truetype'),
+			        	 url('../fonts/industry/Industry-Book-webfont.svg#industrybook') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'wickedmedium';
+			    	src: url('../fonts/industry/Industry-Medium-webfont.eot');
+			    	src: url('../fonts/industry/Industry-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('../fonts/industry/Industry-Medium-webfont.woff') format('woff'),
+			        	 url('../fonts/industry/Industry-Medium-webfont.ttf') format('truetype'),
+			        	 url('../fonts/industry/Industry-Medium-webfont.svg#industrymedium') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrydemi';
+			    	src: url('../fonts/industry/Industry-Demi-webfont.eot');
+			    	src: url('../fonts/industry/Industry-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('../fonts/industry/Industry-Demi-webfont.woff') format('woff'),
+			        	 url('../fonts/industry/Industry-Demi-webfont.ttf') format('truetype'),
+			        	 url('../fonts/industry/Industry-Demi-webfont.svg#industrydemi') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+
+			    font-family: 'industrylight';
+			    	src: url('../fonts/industry/Industry-Light-webfont.eot');
+			    	src: url('../fonts/industry/Industry-Light-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('../fonts/industry/Industry-Light-webfont.woff') format('woff'),
+			        	 url('../fonts/industry/Industry-Light-webfont.ttf') format('truetype'),
+			        	 url('../fonts/industry/Industry-Light-webfont.svg#industrylight') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrydemi_italic';
+				    src: url('../fonts/industry/Industry-DemiItalic-webfont.eot');
+				    src: url('../fonts/industry/Industry-DemiItalic-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/industry/Industry-DemiItalic-webfont.woff2') format('woff2'),
+			         url('../fonts/industry/Industry-DemiItalic-webfont.woff') format('woff'),
+			         url('../fonts/industry/Industry-DemiItalic-webfont.ttf') format('truetype'),
+			         url('../fonts/industry/Industry-DemiItalic-webfont.svg#industrydemi_italic') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrybold_italic';
+			    	src: url('../fonts/industry/Industry-BoldItalic-webfont.eot');
+			    	src: url('../fonts/industry/Industry-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('../fonts/industry/Industry-BoldItalic-webfont.woff2') format('woff2'),
+			         url('../fonts/industry/Industry-BoldItalic-webfont.woff') format('woff'),
+			         url('../fonts/industry/Industry-BoldItalic-webfont.ttf') format('truetype'),
+			         url('../fonts/industry/Industry-BoldItalic-webfont.svg#industrybold_italic') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+	// ------------------------------ //
+
+	// ----- KEYFRAMES ----- //
+
+        // scrollTip
+            @keyframes scrollTip {
+
+                0% {
+
+                	opacity: 0.000;
+
+                }
+
+                12.5% {
+
+                	opacity: 0.845;
+
+                }
+
+                50% {
+
+                	opacity: 0.000;
+
+                }
+                
+                100% {
+
+                	opacity: 0.000;
+
+                } 
+
+            }
+
+        // scrollPulse
+            @keyframes scrollPulse {
+
+                0% {
+
+                	// height: 1px;
+
+					opacity: 0.000;
+
+					transform: translate3d(0,-4px,0);
+
+				}
+
+				33.3333333% {
+
+					// height: 10px;
+
+					opacity: 1;
+					
+					transform: translate3d(0,2px,0);
+
+				}
+
+				66.666666% {
+
+					// height: 1px;
+
+					opacity: 0;
+
+					transform: translate3d(0,-2px,0);
+				
+				} 
+
+				100% {
+
+					// height: 1px;
+
+					opacity: 0.000;
+
+					transform: translate3d(0,0,0);
+
+				}
+
+            }
+
+        // mousePulse
+            @keyframes mousePulse {
+
+                0% {
+
+					opacity: 0.000;
+
+					transform: translate3d(0,-8px,0);
+
+				}
+
+				33.3333333% {
+
+					opacity: 1;
+					
+					transform: translate3d(0,2px,0);
+
+				}
+
+				66.666666% {
+
+					opacity: 0.000;
+
+					transform: translate3d(0,-2px,0);
+				
+				} 
+
+				100% {
+
+					opacity: 0.000;
+
+					transform: translate3d(0,0,0);
+
+				}
+
+            }
+
+	// ------------------------------ //
+
+	// ----- GRADIENTS ----- //
+
+		// the emptiness
+
+	// ------------------------------ //

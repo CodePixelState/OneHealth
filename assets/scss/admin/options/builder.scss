@@ -1,0 +1,567 @@
+// stylesheet: options builder styles
+
+	// runway options builder
+		.runway_page_options-builder,
+		.runway_page_content-types {
+
+		// page background
+			#wpwrap {
+
+				background-color: transparentize($admin, 1.000);
+
+			}
+
+		// framework hook
+			#theme-framework {
+
+				#titlediv {
+
+					display: flex;
+
+					margin: 0 0 12px 0;
+
+					#titlewrap {
+
+						display: inline-flex;
+						margin: 0 0 0 0;
+
+						align-content: flex-start;
+
+						flex-direction: row;
+						flex-grow: 2;
+
+						&:before {
+
+							content: '';
+
+							position: absolute;
+
+							top: 0;
+							bottom: 0;
+							left: 0;
+
+							z-index: 10;
+
+							width: 32px;
+							height: 32px;
+							margin: 0;
+							padding: 0;
+
+							font-family: $klav-font;
+							font-size: 12px;
+
+							line-height: 32px;
+
+							text-transform: $up;
+
+							color: white;
+							background-color: lighten($navy, 5%);
+
+							background-image: url(../img/icons/admin/icon_title.svg);
+							background-repeat: no-repeat;
+							background-size: 20px 20px;
+							background-position: 6px 6px;
+
+							transition: $zip520;
+
+							&:hover {
+
+								background-color: $red;
+
+							}
+
+						}
+
+					}
+
+					#title {
+
+						display: flex;
+
+						height: 32px;
+						padding: 0 12px 0 44px;
+						margin: 0 0 0 0;
+
+						border: none;
+
+						font-family: $vit-bold;
+						font-size: 16px;
+
+						line-height: 32px;
+
+						text-transform: $up;
+
+						color: $navy;
+						background-color: transparent;
+
+						transition: $zip520;
+
+						&:hover {
+
+							background-color: transparentize($admin, 0.935);
+
+							cursor: text;
+
+						}
+
+						&:focus {
+
+							color: $admin;
+							background-color: white;
+
+						}
+
+					}
+
+					.inside {
+
+						display: inline-flex;
+
+					}
+
+				}
+
+				#edit-slug-box {
+
+					display: inline-flex;
+
+					height: 32px;
+					min-height: 32px;
+					margin: 0;
+					padding: 0;
+
+					// background-color: transparentize($admin, 0.225);
+
+					background-color:
+
+						adjust-color( $navy,
+
+							$lightness  : -3.5%,
+							$saturation : -30%,
+							$alpha  	: -0.250
+
+						)
+
+					;
+
+					&:before {
+
+						content: '';
+
+						width: 32px;
+						height: 32px;
+						margin: 0;
+						padding: 0;
+
+						display: inline-flex;
+
+						background-color: lighten($navy, 5%);
+
+						background-image: url(../img/icons/admin/icon_permalink.svg);
+						background-repeat: no-repeat;
+						background-size: 16px 16px;
+						background-position: 8px 8px;
+
+					}
+
+					strong {
+
+						display: inline-block;
+
+						display: none;
+
+						// min-width: 74px;
+						height: 31px;
+						padding: 1px 12px 0 12px;
+
+						font-family: $klav-lite;
+						font-size: 12px;
+						font-weight: normal;
+
+						line-height: 32px;
+
+						letter-spacing: 0.0375em;
+
+						text-align: right;
+
+						text-transform: $up;
+
+						color: white;
+						background-color: lighten($navy, 5%);
+
+					}
+
+					#slug-static {
+
+						display: flex;
+
+						height: 32px;
+						padding: 0;
+
+						font-family: $prox-lite;
+
+						line-height: 32px;
+
+						color: transparentize(white, 0.450);
+
+						a {
+
+							text-decoration: none;
+
+							color: white;
+
+						}
+
+						#editable-post-name {
+
+							margin: 0;
+							padding: 0 6px;
+
+							border: none;
+
+							border-radius: 0px;
+
+							font-family: $prox-font;
+							font-weight: normal;
+
+							line-height: 32px;
+
+							color: white;
+							background-color: transparent;
+
+							background-image: none;
+
+							input {
+
+								width: auto;
+								margin: 0 6px 0 6px;
+								padding: 0 6px 0 6px;
+
+								border: none;
+
+								color: white;
+								background-color: transparentize(white, 0.925);
+
+								&:focus {
+
+									border: none;
+
+									outline: none;
+
+								}
+
+							}
+
+						}
+
+					}
+
+					#edit-slug-buttons {
+
+						display: flex;
+
+					}
+
+					#slug-editor {
+
+						display: flex;
+
+						.slug-editor-input {
+
+							width: auto;
+							height: 22px;
+							margin: 5px 6px 5px 6px;
+							padding: 0 6px 0 6px;
+
+							border: none;
+
+							border-radius: 0px;
+
+							color: white;
+							background-color: transparentize(white, 0.925);
+
+						}
+
+					}
+
+					.edit-slug.button {
+
+						overflow: hidden;
+
+						text-indent: -9999em;
+
+						background-color: $green-m;
+
+						background-image: url(../img/icons/admin/icon_edit.svg);
+						background-repeat: no-repeat;
+						background-size: 16px 16px;
+						background-position: 8px 8px;
+
+						&:hover {
+
+							background-color: $green;
+
+						}
+
+					}
+
+					button {
+
+						display: inline-flex;
+
+						width: 32px;
+						height: 32px;
+						margin: 0;
+						padding: 0;
+
+						overflow: hidden;
+
+						text-indent: -9999em;
+
+						background-repeat: no-repeat;
+						background-size: 16px 16px;
+						background-position: 8px 8px;
+
+					}
+
+					.slug-editor-save {
+
+						background-color: darken($green, 20%);
+
+						background-image: url(../img/icons/admin/icon_check.svg);
+
+						&:hover {
+
+							background-color: $green;
+
+						}
+
+					}
+
+					.make-from-title {
+
+						background-color: darken($navy, 2.5%);
+
+						background-image: url(../img/icons/admin/icon_magic_slug.svg);
+
+						&:hover {
+
+							background-color: lighten($navy, 5%);
+
+						}
+
+					}
+
+					.slug-editor-cancel {
+
+						margin: 0;
+						padding: 1px 16px 0 16px;
+
+						font-size: 12px;
+
+						text-decoration: none;
+
+						color: white;
+						background-color: darken($red, 10%);
+
+						background-image: url(../img/icons/admin/icon_cancel.svg);
+
+						&:hover {
+
+							background-color: $red;
+
+						}
+
+					}
+
+					.get-primary-slug {
+
+						background-color: darken($yellow, 15%);
+
+						background-image: url(../img/icons/admin/icon_reset_slug.svg);
+
+						&:hover {
+
+							background-color: darken($yellow, 10%);
+
+						}
+
+					}
+
+				}
+
+			// page builder
+				.page-builder-wrapper {
+
+					#menu-management-liquid {
+
+						margin-top: 0;
+
+						float: none;
+
+						#post-body-content {
+
+							padding: 12px;
+
+							// border-top: 1px solid transparentize($admin, 0.875);
+
+							background-color: transparentize(white, 0.275);
+
+						}
+
+					}
+
+				}
+
+			// tabs
+				.nav-tab-wrapper {
+
+					.nav-tab {
+
+						&.nav-tab-active {
+
+							background-color: white;
+
+							&:hover {
+
+								background-color: white;
+
+							}
+
+						}
+
+						&:focus {
+
+							box-shadow: none !important;
+
+						}
+
+					}
+
+				}
+
+			// hook for option blocks
+				#post-body-content {
+
+					// padding: 16px !important;
+
+					.elements-list {
+
+						.info {
+
+							display: none;
+
+							margin: 12px 0 12px 6px;
+
+							font-size: 12px;
+
+							line-height: 32px;	
+
+						}
+
+						&.page-layer {
+
+							.page-tab {
+
+								padding: 0;
+
+							}
+
+						}
+
+					}
+
+				}
+
+				#nav-menu-header,
+				#nav-menu-footer {
+
+					margin-top: 0;
+					padding: 0 12px 0 12px;
+
+					border: none;
+
+					border-radius: 0px;
+
+					background-color: white;
+
+					.button-primary,
+					.button {
+
+						&.save-button,
+						&.new-element {
+
+							background-repeat: no-repeat;
+							background-size: 32px 32px;
+							background-position: left center;
+
+						}
+
+					}
+
+					.button-primary {
+
+						&.save-button {
+
+							margin: 12px 0 12px 0;
+							padding-left: 32px;
+
+							background-image: url(../img/icons/admin/icon_save.svg);
+
+						}
+
+					}
+
+					.button {
+
+						&.new-element {
+
+							height: 31px;
+							margin: 12px 8px 12px 0;
+							padding: 1px 16px 0 32px;
+
+							box-sizing: content-box;
+
+							line-height: 32px;
+
+							background-color: darken($navy, 2.5%);
+
+							&.ntab {
+
+								background-image: url(../img/icons/admin/icon_add_tab.svg);
+
+							}
+
+							&.ncontainer {
+
+								background-image: url(../img/icons/admin/icon_add_container.svg);
+
+							}
+
+							&.nfield {
+
+								background-image: url(../img/icons/admin/icon_add_field.svg);
+
+							}
+
+							&:hover {
+
+								background-color: lighten($navy, 10%);
+
+							}
+
+							img {
+
+								display: none;
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

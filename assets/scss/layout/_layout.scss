@@ -1,0 +1,16 @@
+// stylesheet: layout stylesheet compiler
+	
+	// common layout styles
+		@import 'global';
+
+	// header
+		@import 'header';
+
+	// fullscreen
+		@import 'fullscreen';
+
+	// toolbars
+		@import 'toolbars';
+
+	// footer
+		@import 'footer';

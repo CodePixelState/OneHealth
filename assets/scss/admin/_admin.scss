@@ -1,0 +1,38 @@
+// stylesheet: admin class compiler
+
+	// core views
+
+		// globals
+			@import "core/globals";
+
+		// core ui
+			@import "core/colors";
+
+		// wpadminbar
+			@import "core/wpadminbar";
+
+		// sidebar menu
+			@import "core/adminmenu";
+
+		// sidebar icons
+			@import "core/sidebar";
+
+		// toolbar icons
+			@import "core/toolbar";
+
+		// page content
+			@import "core/wpcontent";
+
+		// forms and input elements
+			@import "core/forms";
+
+		// widgets
+			@import "core/widgets";
+
+		// views
+			@import "views/views";
+
+	// custom theme/options framework views
+
+		// options framework
+			@import "options/options";

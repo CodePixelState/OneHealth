@@ -1,0 +1,387 @@
+// stylesheet: wp-admin sidebar icon styles
+
+	// globals
+		.wp-menu-image {
+
+			&:before {
+
+				opacity: 0.625;
+
+				background-repeat: no-repeat;
+				background-size: 20px 20px;
+
+				transition: $all220;
+
+			}
+
+		}
+
+	// dashboard
+		#menu-dashboard {
+
+			.dashicons-dashboard {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_dashboard.svg);
+
+				}
+
+			}
+
+		}
+
+	// billboard (legacy)
+		#menu-posts-homepage-billboards {
+
+			.dashicons-before {
+
+				img {
+
+					display: none;
+
+				}
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_demolition.svg);
+
+				}
+
+			}
+
+		}
+
+	// billboard
+		#menu-posts-billboard {
+
+			.dashicons-before {
+
+				img {
+
+					display: none;
+
+				}
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_billboard.svg);
+
+				}
+
+			}
+
+		}
+
+	// vc shitfuck asseater
+		#toplevel_page_vc-general {
+
+			.dashicons-before {
+
+				img {
+
+					display: none;
+
+				}
+
+			}
+
+			.wp-menu-image {
+
+				background: {
+
+					image: url(../img/icons/admin/icon_fuck_vc.svg) !important;
+					repeat: no-repeat;
+					size: 20px 20px;
+					position: 14px 14px;
+
+				}
+
+
+			}
+
+		}
+
+	// degree programs
+		#menu-posts-degree-program {
+
+			.dashicons-before {
+
+				// img {
+
+				// 	display: none;
+
+				// }
+
+				// &:before {
+
+				// 	content: '';
+
+				// 	background-image: url(../img/icons/admin/icon_degrees.svg);
+
+				// }
+
+			}
+
+		}
+
+	// degree programs (legacy)
+		#menu-posts-degree-programs {
+
+			.dashicons-before {
+
+				img {
+
+					display: none;
+
+				}
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_demolition.svg);
+
+				}
+
+			}
+
+		}
+
+	// posts
+		#menu-posts {
+
+			.dashicons-admin-post {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_posts.svg);
+
+				}
+
+			}
+
+		}
+
+	// gravity forms
+		#adminmenu {
+
+			#toplevel_page_gf_edit_forms {
+
+				.wp-menu-image {
+
+					background-image: url(../img/icons/admin/icon_forms.svg) !important;
+
+				}
+
+			}
+
+		}
+
+	// pages
+		#menu-pages {
+
+			.dashicons-admin-page {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_pages.svg);
+
+				}
+
+			}
+
+		}
+
+	// piklist
+		#menu-posts-piklist_demo,
+		#toplevel_page_piklist {
+
+			.dashicons-before {
+
+				img {
+
+					display: none;
+
+				}
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_piklist.svg);
+
+				}
+
+			}
+
+		}
+
+	// appearance
+		#menu-appearance {
+
+			.dashicons-admin-appearance {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_design.svg);
+
+				}
+
+			}
+
+		}
+
+	// appearance
+		#menu-plugins {
+
+			.dashicons-admin-plugins {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_plugins.svg);
+
+				}
+
+			}
+
+		}
+
+	// users
+		#menu-users {
+
+			.dashicons-admin-users {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_users.svg);
+					
+
+				}
+
+			}
+
+		}
+
+	// tools
+		#menu-tools {
+
+			.dashicons-admin-tools {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_tools.svg);
+					
+
+				}
+
+			}
+
+		}
+
+	// settings
+		#menu-settings {
+
+			.dashicons-admin-settings {
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_settings.svg);
+					
+
+				}
+
+			}
+
+		}
+
+	// contacts + locations
+		#menu-posts-contacts-locations {
+
+			// .dashicons-before {
+
+			// 	img {
+
+			// 		display: none;
+
+			// 	}
+
+			// 	&:before {
+
+			// 		content: '';
+
+			// 		background-image: url(../img/icons/admin/icon_billboard.svg);
+
+			// 	}
+
+			// }
+
+		}
+
+	// runway
+		#toplevel_page_framework-options {
+
+			.dashicons-before {
+
+				img {
+
+					display: none;
+
+				}
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_runway.svg);
+
+				}
+
+			}
+
+		}
+	
+	// hhs
+		#toplevel_page_current-theme {
+
+			// display: none;
+
+			.dashicons-before {
+
+				img {
+
+					display: none;
+
+				}
+
+				&:before {
+
+					content: '';
+
+					background-image: url(../img/icons/admin/icon_hhs.svg);
+
+				}
+
+			}
+
+		}

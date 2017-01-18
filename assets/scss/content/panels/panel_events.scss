@@ -1,0 +1,341 @@
+// stylesheet: events panel styles
+
+	// top-level hook
+		#events-panel {
+
+		// UI elements
+			.left-toolbar {
+
+				background: {
+
+					color: transparentize(white, 0.585);
+
+				}
+
+			}
+
+			.right-toolbar {
+
+				background: {
+
+					color: transparentize(white, 0.285);
+
+				}
+
+			}
+
+			.panel-footer {
+
+				display: none;
+
+			}
+
+			.full-width-header {
+
+				position: relative;
+
+				display: flex;
+
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				width: calc(100% - 128px);
+				// height: calc(50% - 32px);
+				height: 50%;
+				margin: 0 64px 0 64px;
+				padding: 128px 64px 32px 64px;
+
+				background: {
+
+					color:
+
+						adjust-color(
+
+							$navy,
+							$hue 		: 0%,
+							$saturation : 0%,
+							$lightness  : -10%,
+							$alpha 		: -0.415
+
+						)
+
+					;
+
+					image:
+
+						linear-gradient(
+
+							180deg,
+							transparentize($navy, 1.000) 0%,
+							transparentize($navy, 1.000) 60%,
+							adjust-color(
+
+								$navy,
+								$lightness  : -3.5%,
+								$saturation : 0%,
+								$alpha  	: -0.565
+
+							) 100%
+
+						)
+
+					;
+
+				}
+
+				span {
+
+					font: {
+
+						weight: normal;
+
+					}
+
+					text: {
+
+						rendering: $pixper;
+
+					}
+
+				}
+
+				.panel-title {
+
+					position: absolute;
+
+					bottom: -32px;
+
+					z-index: 1;
+
+					display: inline-block;
+
+					width: auto;
+					height: 64px;
+					margin: 0;
+					padding: 1px 28px 0 32px;
+
+					font: {
+
+						family: $klav-nemi;
+						size: 24px;
+
+					}
+
+					line-height: 64px;
+
+					letter-spacing: 0.165em;
+
+					text: {
+
+						// align: center;
+						transform: $up;
+
+					}
+
+					color: white;
+
+					background: {
+
+						// color: $g135;
+						color:
+
+							adjust-color(
+
+								$green,
+								$lightness  : -1.5%,
+								$saturation : 0%,
+								$alpha  	: 0.000
+
+							)
+
+						;
+
+					}
+
+				}
+
+				.panel-subhead {
+
+					font: {
+
+						family: $klav-nont;
+						size: 16px;
+
+					}
+
+					line-height: 32px;
+
+					letter-spacing: 0.025em;
+
+					text: {
+
+						// align: center;
+						transform: none;
+
+					}
+
+					color: transparentize(black, 0.235);
+
+				}
+
+			}
+
+			.full-width-content {
+
+				display: flex;
+
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+
+				width: calc(100% - 128px);
+				// height: calc(50% - 32px);
+				height: 50%;
+				margin: 0 64px 0 64px;
+				padding: 0;
+
+				.half-width-content {
+
+					display: flex;
+
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					width: 50%;
+					height: 100%;
+					margin: 0;
+					padding: 32px 64px 64px 64px;
+
+					span {
+
+						font: {
+
+							weight: normal;
+
+						}
+
+						text: {
+
+							rendering: $pixper;
+
+						}
+
+					}
+
+					.sub-panel-title {
+
+						font: {
+
+							family: $klav-nemi;
+							size: 18px;
+
+						}
+
+						line-height: 32px;
+
+						letter-spacing: 0.125em;
+
+						text: {
+
+							// align: center;
+							transform: $up;
+
+						}
+
+						color: $navy;
+
+					}
+
+					.sub-panel-text {
+
+						font: {
+
+							family: $klav-nont;
+							size: 14px;
+
+						}
+
+						line-height: 18px;
+
+						letter-spacing: 0.045em;
+
+						text: {
+
+							// align: center;
+							transform: $low;
+
+						}
+
+						color: $navy;
+
+					}
+
+				}
+
+				#events-sidebar {
+
+					justify-content: flex-end;
+					align-items: flex-start;
+
+					background: {
+
+						color: transparentize(white, 0.225);
+
+					}
+
+					.sub-panel-title {
+
+						color: $turqish;
+
+					}
+
+					.sub-panel-text {
+
+						font: {
+
+							family: $klav-nont;
+
+						}
+
+						color: transparentize(black, 0.375);
+
+					}
+
+				}
+
+				#events-feature {
+
+					justify-content: flex-end;
+					align-items: flex-end;
+
+					background: {
+
+						color: transparentize(white, 0.525);
+
+					}
+
+					.sub-panel-title {
+
+						color: $green;
+
+					}
+
+					.sub-panel-text {
+
+						font: {
+
+							family: $klav-nont;
+
+						}
+
+						color: transparentize(black, 0.345);
+
+					}
+
+				}
+
+			}
+
+		}

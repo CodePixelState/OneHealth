@@ -1,0 +1,127 @@
+// stylesheet: edit.php/post.php UI styles
+
+	// top-level hook
+		.post-type-post,
+		.post-type-page {
+
+			#wpcontent {
+
+				#wpbody {
+
+					#wpbody-content {
+
+						.wrap {
+
+							#poststuff {
+
+								.composer-switch {
+
+									border-radius: 0px;
+
+									span {
+
+										border-radius: 0px;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		// postbox
+			.postbox {
+
+				border: none;
+
+				// background-color: transparent;
+				background-color: transparentize(white, 0.125);
+
+			}
+
+		}
+
+		.edit-php {
+
+			.inline-edit-row fieldset input[name=aa],
+			.inline-edit-row fieldset input[name=hh],
+			.inline-edit-row fieldset input[name=jj],
+			.inline-edit-row fieldset input[name=mn] {
+
+				width: auto;
+				min-width: 48px;
+
+				text: {
+
+					align: center;
+
+				}
+
+			}
+
+			.fixed {
+
+				.column-panel_order_number,
+				.panel_order_number {
+
+					// display: inline-flex;
+
+					// flex-direction: row;
+					// justify-content: flex-end;
+					// align-items: center;
+
+					width: 10%;
+
+				}
+
+			}
+
+		}
+
+		.post-type-page {
+
+			#wpcontent {
+
+				#wpbody {
+
+					#wpbody-content {
+
+						.wrap {
+
+							#poststuff {
+
+								.composer-switch {
+
+									display: block !important;
+
+									margin-bottom: 24px;
+
+									border-radius: 0px;
+
+									span,
+									a {
+
+										border-radius: 0px;
+
+									}
+
+								}
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

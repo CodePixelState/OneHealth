@@ -1,0 +1,233 @@
+// stylesheet: our purpose panel styles
+
+	// top-level hook
+		#purpose-panel {
+
+		// UI elements
+			.right-toolbar {
+
+				background: {
+
+					// color: $vapor;
+					color: transparentize($vapor, 0.325);
+
+				}
+
+			}
+
+			.panel-footer {
+
+				background: {
+
+					color: transparentize(white, 1.000);
+
+				}
+
+			}
+
+			.full-width-header {
+
+				display: flex;
+
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 64px 20% 128px 64px;
+
+				@media #{$small-only} {
+					
+					padding: 96px 24px 96px 24px;
+				
+				}
+
+				span {
+
+					font: {
+
+						weight: normal;
+
+					}
+
+					text: {
+
+						align: right;
+						rendering: $pixper;
+
+					}
+
+				}
+
+				.panel-title {
+
+					position: relative;
+
+					margin-right: -10px;
+
+					font: {
+
+						family: $klav-nemi;
+						size: 40px;
+
+					}
+
+					line-height: 84px;
+
+					letter-spacing: 0.165em;
+
+					text: {
+
+						transform: $up;
+
+					}
+
+					color: transparentize($navy, 0.015);
+
+					@media #{$small-only} {
+						
+						margin-right: -6px;
+
+						font-size: 24px;
+
+						line-height: 64px;
+
+						letter-spacing: 0.115em;
+					
+					}
+
+					&:before {
+
+						content: '';
+
+						position: absolute;
+
+						top: -16px;
+						right: 10px;
+
+						z-index: 1;
+
+						display: block;
+
+						width: 64px;
+						height: 3px;
+						margin: 0;
+						padding: 0;
+
+						background: {
+
+							color: $yellow;
+
+						}
+
+						@media #{$small-only} {
+							
+							top: -8px;
+							right: 6px;
+
+							width: 48px;
+							height: 2px;
+						
+						}
+
+					}
+
+				}
+
+				.panel-subhead {
+
+					font: {
+
+						family: $klav-nont;
+						size: 16px;
+
+					}
+
+					line-height: 28px;
+
+					letter-spacing: 0.025em;
+
+					text: {
+
+						transform: none;
+
+					}
+
+					color: transparentize($black, 0.165);
+
+					@media #{$small-only} {
+						
+						font-size: 14px;
+
+						line-height: 20px;
+
+						br {
+
+							display: none;
+
+						}
+					
+					}
+
+				}
+
+				.panel-button {
+
+					display: block;
+
+					width: auto;
+					height: 48px;
+					margin: 48px 0 0 0;
+					padding: 1px 24px 0 24px;
+
+					border: none;
+					border-radius: 0px;
+
+					font: {
+
+						family: $klav-nemi;
+						size: 12px;
+						weight: normal;
+
+					}
+
+					line-height: 48px;
+
+					letter-spacing: 0.065em;
+
+					text: {
+
+						align: center;
+						transform: $up;
+						rendering: $pixper;
+						shadow: none;
+
+					}
+
+					color: white;
+
+					background: {
+
+						color: $green;
+
+					}
+
+					transition: $all220;
+
+					&:hover {
+
+						background: {
+
+							color: transparentize($navy, 0.265);
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

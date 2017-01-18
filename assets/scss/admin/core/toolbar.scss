@@ -1,0 +1,21 @@
+// stylesheet: wp-admin toolbar icon styles
+
+	// network sites
+		#wpadminbar {
+
+			#wp-admin-bar-my-sites,
+			#wp-admin-bar-site-name {
+
+				.ab-item {
+
+					&:before {
+
+						
+
+					}
+
+				}
+
+			}
+
+		}

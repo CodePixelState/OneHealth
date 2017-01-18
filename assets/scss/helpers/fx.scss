@@ -1,0 +1,411 @@
+// stylesheet: special fx
+
+	// page load fx
+		.content-reveal {
+
+			display: none;
+
+		}
+
+	// menu overlay fx
+		.render-menu {
+
+			.fullscreen-menu-background {
+
+				&.left,
+				&.right {
+
+					opacity: 1.000;
+
+					transform: translate3d(0,0,0);
+
+				}
+
+				&.left {
+
+					transition: all 360ms $zipit 0ms;
+
+				}
+
+				&.right {
+
+					transition: all 360ms $zipit 0ms;
+
+				}
+
+			}
+
+			#fullscreen-menu {
+
+				opacity: 1.000;
+
+				transform: translate3d(0,0,0);
+
+				transition: all 720ms $zipit 0ms;
+
+				#menu-sidebar {
+
+					opacity: 1.000;
+
+					transform: translate3d(0,0,0);
+
+					transition: all 420ms $zipit 420ms;
+
+				}
+
+				#menu-header {
+
+					opacity: 1.000;
+
+					transform: translate3d(0,0,0);
+
+					transition: all 600ms $zipit 120ms;
+
+				}
+
+			}
+
+			#menu-footer {
+
+				opacity: 1.000;
+
+				transform: translate3d(0,0,0);
+
+				transition: all 480ms $zipit 240ms;
+
+			}
+
+			#site-content {
+
+				article {
+
+					&.section {
+
+						&.section-panel {
+
+							// opacity: 0.825;
+
+							// transition: opacity 720ms $zipit 0ms;
+
+						}
+
+					}
+
+				}
+
+			}
+
+			.section-panel {
+
+				&.active {
+
+					.panel-content-container {
+
+						// opacity: 0.000 !important;
+
+						// transition: opacity 220ms linear 0ms;
+
+					}
+
+					.panel-footer {
+
+						opacity: 0.000;
+
+						transform: translate3d(0,64px,0);
+
+						transition: all 360ms $zipit 0ms;
+
+					}
+
+				}
+
+			}
+
+			#main-menu-button {
+
+				background: {
+
+					color:
+
+						adjust-color(
+
+							$green,
+							$lightness  : -5%,
+							$saturation : -10%,
+							$alpha 		: -0.765
+
+						)
+
+					;
+
+				}
+
+				&:hover {
+
+					background: {
+
+						color:
+
+							adjust-color(
+
+								$green,
+								$lightness  : 0%,
+								$saturation : 0%,
+								$alpha 		: -0.285
+
+							)
+
+						;
+
+					}
+
+				}
+
+				#menu-open {
+
+					opacity: 0.000;
+
+					transition: opacity 220ms $zipit 0ms;
+
+				}
+
+				#menu-close {
+
+					opacity: 1.000;
+
+					transition: opacity 360ms $zipit 120ms;
+
+				}
+
+			}
+
+		}
+
+	// body class on panel change
+		.fp-viewing-home {
+
+			#panel-nav ul li a span {
+
+				// background-color: transparentize(white, 0.915);
+
+				// transition: all 220ms linear 0ms;
+
+			}
+
+			#site-header {
+
+				.signature-line,
+				#brand_ONE {
+
+					// display: none;
+
+					opacity: 0;
+
+					transition: all 520ms $zipit 0ms;
+
+				}
+
+				.signature-line {
+
+					transform: translate3d(0,-96px,0);
+
+				}
+
+				#brand_ONE {
+
+					transform: translate3d(100%,0,0);
+
+				}
+
+			}
+
+		}
+
+		.fp-viewing-principles-0,
+		.fp-viewing-principles-vision,
+		.fp-viewing-principles-collaboration,
+		.fp-viewing-principles-create-futures,
+		.fp-viewing-programs-0,
+		.fp-viewing-programs-urbanization,
+		.fp-viewing-programs-environmental-change,
+		.fp-viewing-programs-food-systems {
+
+			// .ui-toolbar {
+
+			// 	bottom: 64px;
+
+			// 	height: calc(100% - 64px);
+
+			// 	transition: all 720ms $expo 0ms;
+
+			// }
+
+			#site-footer {
+
+				opacity: 0;
+
+				transform: translate3d(0,64px,0);
+
+				transition: all 320ms $expo 0ms;
+
+			}
+
+			#prev-panel-button,
+			#next-panel-button {
+
+				opacity: 1.000;
+
+				transition: all 520ms $zipit 0ms;
+
+			}
+
+			#prev-panel-button {
+
+				transform: translate3d(0,0,0);
+
+			}
+
+			#next-panel-button {
+
+				transform: translate3d(0,0,0);
+
+			}
+
+		}
+
+		.fp-viewing-principles-0,
+		.fp-viewing-principles-vision,
+		.fp-viewing-principles-collaboration,
+		.fp-viewing-principles-create-futures {
+
+			#principles-panel {
+
+				// .fp-controlArrow {
+
+				// 	opacity: 1.000;
+
+				// 	transition:
+
+				// 		opacity 0ms $expo 0ms,
+				// 		transform 720ms $expo 0ms,
+				// 		background 120ms linear 0ms
+
+				// 	;
+
+				// 	&.fp-prev,
+				// 	&.fp-next {
+
+				// 		transform: translate3d(0,0,0);
+
+				// 	}
+
+				// }
+
+			}
+
+		}
+
+	// UI toolbar color changes
+		.fp-viewing-programs-0,
+		.fp-viewing-programs-urbanization,
+		.fp-viewing-programs-environmental-change,
+		.fp-viewing-programs-food-systems {
+
+			#programs-panel {
+
+				// .fp-controlArrow {
+
+				// 	opacity: 1.000;
+
+				// 	transition:
+
+				// 		opacity 0ms $expo 0ms,
+				// 		transform 720ms $expo 0ms,
+				// 		background 120ms linear 0ms
+
+				// 	;
+
+				// 	&.fp-prev,
+				// 	&.fp-next {
+
+				// 		transform: translate3d(0,0,0);
+
+				// 	}
+
+				// }
+
+			}
+
+		}
+
+		.fp-viewing-events {
+
+			#left-toolbar,
+			#right-toolbar {
+
+				// background-color: transparentize($dark-nite, 0.785);
+
+				transition: all 720ms $expo 0ms;
+
+			}
+
+		}
+
+		.fp-viewing-footer {
+
+			#site-footer {
+
+				background-color: white;
+
+				transition: all 720ms $expo 0ms;
+
+			}
+
+			#left-toolbar,
+			#right-toolbar {
+
+				background-color: $vapor;
+
+				transition: all 720ms $expo 0ms;
+
+			}
+
+		}
+
+	// generic panel fx
+		.section-panel {
+
+			&.active {
+
+				.left-toolbar,
+				.right-toolbar {
+
+					opacity: 1.000;
+
+					transform: translate3d(0,0,0);
+
+					transition: all 720ms $expo 0ms;
+
+				}
+
+				.panel-label  {
+
+					opacity: 1.000;
+
+					transition: all 720ms linear 0ms;
+
+				}
+
+				.panel-footer {
+
+					opacity: 1.000;
+
+					transform: translate3d(0,0,0);
+
+					transition: all 720ms $outIt 0ms;
+
+				}
+
+			}
+
+		}

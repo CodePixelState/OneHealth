@@ -1,0 +1,455 @@
+// stylesheet: core style overrides
+
+	// fix stupid padding on html element
+		html {
+
+			padding: 0;
+
+			background-image: url(../img/admin/admin_page_bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+
+			&.wp-toolbar {
+
+				padding: 0;
+
+			}
+
+		}
+
+	// reset body font to something that doesn't suck
+		body {
+
+			font-family: $indu-semi;
+			// font-family: $exoz-semi;
+
+			color: #161616;
+
+			background-color: transparent;
+
+			text-rendering: $pixper !important;
+
+			-moz-osx-font-smoothing: grayscale;
+
+			-webkit-font-smoothing: $anti;
+
+			* {
+
+				// border-radius: 0px !important;
+
+			}
+
+		}
+
+	// input fields
+		input {
+
+			height: 32px;
+			margin: 0;
+			padding: 10px 12px 10px 12px;
+
+			font-size: 12px;
+
+			line-height: 12px;
+
+			box-shadow: none !important;
+
+		}
+
+	// buttons, links
+		a,
+		button {
+
+			text-rendering: $pixper;
+
+		}
+
+	// temporarily disable help screen
+		#screen-meta-links {
+
+			// display: none;
+
+		}
+
+	// custom fonts
+		h1, h2, h3, h4, h5, h6 {
+
+			font-family: $indu-bold;
+			font-weight: normal;
+
+			text-transform: $up;
+			text-rendering: $pixper;
+
+			color: $adtext;
+
+			-moz-osx-font-smoothing: grayscale;
+
+			-webkit-font-smoothing: $anti;
+
+		}
+
+	// WP updates
+		#update-nag,
+		.update-nag {
+
+			margin: 24px 24px 0 24px;
+			padding: 8px 12px 8px 12px;
+
+			border-left: 4px solid $grown;
+
+			font-family: $prox-semi;
+			font-size: 12px;
+			font-weight: normal;
+
+			line-height: 16px;
+
+			box-shadow: none;
+
+			a {
+
+				text-decoration: none;
+
+				color: lighten($navy, 5%);
+
+			}
+
+		}
+
+	// custom alert messages
+		.wp-admin {
+
+			.notice,
+			.updated,
+			.error,
+			.notice-success {
+
+				padding: 0 12px 0 12px;
+
+				box-shadow: none;
+
+				font: {
+
+					// family: $prox-semi;
+					family: $indu-demi;
+					size: 11px;
+					weight: normal;
+
+				}
+
+				line-height: 32px;
+
+				text: {
+
+					transform: $up;
+					rendering: $pixper;
+
+				}
+
+				p {
+
+					margin: 0;
+					padding: 2px 0 0 0;
+
+					font: {
+
+						size: 11px;
+
+					}
+
+					line-height: 30px;
+
+					strong {
+
+						font-weight: normal;
+
+					}
+
+				}
+
+				.notice-dismiss {
+
+					right: 0;
+
+					padding: 6px 9px 6px 9px;
+
+				}
+
+			}
+
+			.notice-success,
+			.updated {
+
+				border-color: $green;
+
+			}
+
+		}
+
+	// reset everything after body to be flexbox-friendly
+		#wpwrap {
+
+			display: flex;
+
+			height: 100%;
+
+			padding-top: 48px;
+
+			box-sizing: border-box;
+
+			text-rendering: $pixper;
+
+			-webkit-font-smoothing: $anti;
+
+			.tablenav {
+
+				// height: 32px;
+				height: auto;
+				min-height: 32px;
+
+				margin-bottom: 16px;
+
+				select {
+
+					height: 32px;
+					margin: 0 8px 0 0;
+
+					// -webkit-appearance: none !important;
+					
+				}
+
+				.button {
+
+					margin-top: 0 !important;
+
+				}
+
+			}
+
+			.wp-admin {
+
+
+
+			}
+
+			b,
+			strong
+			.row-title {
+
+				font-weight: normal !important;
+				font-family: $indu-demi;
+
+			}
+
+			.widefat,
+			.postbox {
+
+				box-shadow: none !important;
+				border: none !important;
+
+				b,
+				strong,
+				.row-title {
+
+					font-weight: normal !important;
+					font-family: $indu-demi;
+
+				}
+
+			}
+
+			.form-table {
+
+				* {
+
+					font-weight: normal;
+
+				}
+
+			}
+
+			.meta-box-sortables {
+
+				.-top {
+
+					&.inside {
+
+						margin-bottom: 20px !important;
+
+					}
+
+				}
+
+			}
+
+			.postbox {
+
+				.handlediv {
+
+					width: 32px;
+					height: 32px;
+					padding: 0;
+
+					&:focus {
+
+						color: white;
+
+						transition: $zip520;
+
+						.toggle-indicator {
+
+							color: white;
+
+							transition: $zip520;
+
+							&:before {
+
+								outline: none !important;
+
+								box-shadow: none !important;
+
+							}
+
+						}
+
+					}
+
+					&:hover {
+
+						color: white;
+
+						.toggle-indicator {
+
+							color: white;
+
+							background-color: transparentize($grown, 0.125);
+
+							transition: $zip520;
+
+						}
+
+					}
+
+					.toggle-indicator {
+
+						display: block;
+
+						width: 32px;
+						height: 32px;
+						margin: 0;
+						padding: 6px;
+
+						box-sizing: border-box;
+
+						color: transparentize(white, 0.485);
+						background-color: transparentize(white, 0.925);
+
+						transition: $zip520;
+
+						&:focus {
+
+							outline: none !important;
+
+						}
+
+						&:before {
+
+							margin: 0;
+
+							border-radius: 0px !important;
+
+							&:focus {
+
+								outline: none !important;
+
+							}
+
+						}
+
+					}
+
+				}
+
+				.hndle {
+
+					padding: 2px 12px 0 12px;
+
+					border-bottom: none;
+
+					font: {
+
+						size: 12px;
+
+					}
+
+					line-height: 30px;
+
+					color: white;
+					background-color: transparentize($admin, 0.075);
+
+				}
+
+			}
+
+			#wpcontent,
+			#wpfooter {
+
+				display: flex;
+
+				width: calc(100% - 220px);
+				// margin-left: 200px;
+				margin-left: 0;
+
+			}
+
+			#wpcontent {
+
+				height: 100%;
+				min-height: 100%;
+				padding: 0;
+
+				#wpbody {
+
+					display: flex;
+
+					width: 100%;
+					height: 100%;
+
+					#wpbody-content {
+
+						height: 100%;
+						padding: 0;
+
+					}
+
+				}
+
+				#post-body {
+
+					#post-body-content {
+
+						// padding: 0 24px 0 24px;
+						margin: 0;
+
+						box-sizing: border-box;
+
+						// background-color: $lights;
+
+					}
+
+				}
+
+			}
+
+			#wpfooter {
+
+				display: none;
+
+				left: 200px;
+
+				box-sizing: border-box;
+
+			}
+
+		}

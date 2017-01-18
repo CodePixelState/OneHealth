@@ -1,0 +1,41 @@
+// stylesheet: base styles
+
+	// background
+		html,
+		body {
+
+			height: 100%;
+			min-height: 100%;
+
+		}
+
+		html {
+
+			background: {
+
+				color:
+
+					adjust-color(
+
+						$navy,
+						$lightness  : -20%,
+						$saturation : -80%,
+						$alpha  	: -0.000
+
+					)
+
+				;
+
+			}
+
+		}
+
+		body {
+
+			background: {
+
+				color: transparent;
+
+			}
+
+		}

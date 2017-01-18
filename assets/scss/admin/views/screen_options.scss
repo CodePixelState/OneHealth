@@ -1,0 +1,103 @@
+// stylesheet: screen options/help meta boxes
+
+	// button controls
+		#screen-meta-links {
+
+			margin: 0 24px 0 0;
+
+			#contextual-help-link-wrap,
+			#screen-options-link-wrap {
+
+				height: 32px;
+
+				border: none;
+
+				background-color: transparentize($admin, 0.065);
+
+				box-shadow: none;
+
+				.show-settings {
+
+					// display: flex;
+
+					height: 31px;
+					margin: 0;
+					padding: 1px 0 0 16px;
+
+					box-sizing: content-box;
+
+					// line-height: 32px;
+
+					font: {
+
+						family: $indu-demi;
+						size: 11px;
+						weight: normal;
+
+					}
+
+					color: transparentize(white, 0.250);
+
+					-webkit-font-smoothing: $anti;
+
+					&:hover {
+
+						color: white;
+						background-color: $navy;
+
+					}
+
+					&:after {
+
+						// position: static;
+
+						padding: 0 10px 0 2px;
+
+						// line-height: 32px
+
+					}
+
+				}
+
+			}
+
+		}
+
+	// sliding panel
+		#screen-meta {
+
+			margin: 0 24px 0 24px;
+
+			border: none;
+
+			background-color: transparentize($admin, 0.065);
+
+			box-shadow: none;
+
+		// screen options
+			#screen-options-wrap {
+
+				padding: 24px;
+
+				color: white;
+
+				legend {
+
+					font: {
+
+						family: $indu-bold;
+						weight: normal;
+
+					}
+
+				}
+
+				p.submit {
+
+					margin: 0;
+
+				}
+
+			}
+
+		}

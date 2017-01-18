@@ -1,0 +1,171 @@
+// stylesheet: global variables
+
+	// fonts
+	
+		// Klavika
+			$klav-font: 'Klavika_CondReg';
+			$klav-lite: 'Klavika_CondLight';
+			$klav-semi: 'Klavika_CondMed';
+			$klav-bold: 'Klavika_CondBold';
+			$klav-nold: 'Klavika-Bold';
+			$klav-nemi: 'Klavika-Medium';
+			$klav-nont: 'Klavika-Regular';
+
+		// Proxima Nova
+			$prox-font: 'Proxima_Nova_Regular';
+			$prox-thin: 'Proxima_Nova_Thin';
+			$prox-lite: 'Proxima_Nova_Light';
+			$prox-semi: 'Proxima_Nova_Semibold';
+			$prox-bold: 'Proxima_Nova_Bold';
+			$prox-tilt: 'ProximaNova-BoldIt';
+
+		// Vitesse
+			$vit-book: 'Vitesse_Book';
+			$vit-lite: 'Vitesse_Light';
+			$vit-med: 'Vitesse_Medium';   
+			$vit-bold: 'Vitesse_Bold';
+
+		// Industry
+			$indu-lite: 'industrylight';
+			$indu-font: 'industrybook';
+			$indu-demi: 'industrydemi';
+			$indu-semi: 'wickedmedium';
+			$indu-bold: 'industrybold';
+			$indu-tilt: 'industrydemi_italic';
+			$indu-bilt: 'industrybold_italic';
+
+		// Exo
+			$exoz-semi: 'exo_2medium';
+			$exoz-bold: 'exo_2bold';
+
+	// colors
+
+		// CSU brand
+
+			// greens
+				$g140 		: #156140;
+				$g135 		: #115135;
+				$dark 		: #0A3321;
+				$nite 		: #082818;
+				$midnite	: #051910;
+				$dark-nite	: #050F08;
+
+			// golds
+				$old-gold	: #AA974D;
+				$gold 		: #D7D392;
+
+		// ONE Health brand	
+				
+			// base colors
+				$yellow 	: #FFE362;
+				$turqish 	: #09B7C7;
+				$green 		: #88AC5C;
+				$navy 		: #005A7B;
+				$grown  	: #BBBCBF;
+				$ogold 		: #C5B784;
+				$red 		: #AA482E;
+				$orange 	: #E1963E;
+
+			// super secret mixes
+				$red-but 	: #7E2713;
+
+			// dark desaturated pallete
+				$yellow-m 	: #909640;
+				$red-m 		: #743C2E;
+				$green-m 	: #698781;
+				$navy-m 	: #06292E;
+				$orange-m	: #996F3E;
+
+			// bright highlight pallete
+				$yellow-h 	: #EDFB4E;
+				$red-h 		: #D06143;
+				$green-h 	: #94D1C4;
+				$navy-h 	: #276E77;
+				$orange-h 	: #FFAC4D;
+
+		// randoms
+
+			// social media
+				$twitter 	: #00ACED;
+				$facebook 	: #3B5998;
+				$googleplus : #DD4B39;
+				$pinterest 	: #CB2027;
+				$linkedin 	: #007BB6;
+				$youtube 	: #BB0000;
+				$vimeo 		: #AAD450;
+				$tumblr 	: #32506D;
+				$instagram 	: #517FA4;
+				$plickr 	: #F40072;
+				$blickr 	: #1B56D1;
+
+			// customs
+				$hot-yellow : #C4D82E;
+				$vapor 		: #F6F6F6;
+				$silver 	: #EFEFEF;
+				$smoke 		: #EEEEEE;
+				$donkeykong : #DDDDDD;
+				$iron 		: #CCCCCC;
+				$charcoal 	: #666666;
+				$steel 		: #545454;
+				$quads 		: #444444;
+				$oil        : #333333;
+				$harris		: #252525;
+				$dosequis	: #222222;
+				$proper 	: #141414;
+				$canvas 	: #111111;
+				$campaign   : #97CA3D;
+				$admin		: #23282D;
+				$wp 		: #0073AA;
+				$lights		: #F1F1F1;
+				$jumbo 		: #888888;
+				$hotshit 	: #1D3732;
+
+			// mashups
+				$bg 		: #093832;
+
+				$blue-state :
+
+					mix(
+
+						$navy,
+						$green,
+						50%
+
+					)
+
+				;
+
+				$adtext 	:
+
+					#38414C
+
+				;
+
+	// utilities
+
+		// special FX filters
+			$blur 	: blur(10px);
+
+		// common typography  settings
+			$up 	 : uppercase;
+			$low 	 : lowercase;
+
+			$pixper  : geometricPrecision;
+			$optimus : optimizeLegibility;
+			
+			$subant	 : subpixel-antialiased;
+			$anti 	 : antialiased;
+
+			$webfont : -webkit-font-smoothing;
+
+		// transition hover states
+			$all160 : all 160ms linear 0ms;
+			$all220 : all 220ms linear 0ms;
+			$zip520 : all 520ms cubic-bezier(.075,.82,.165,1) 0ms;
+
+			$zipit  : cubic-bezier(.19,1,.22,1);
+			$outIt  : cubic-bezier(0.75,0.82,0.165,1);
+			$expo   : cubic-bezier(1,0,0,1);
+
+		// border styles
+			$appframe : 1px solid transparentize(white, 0.775);

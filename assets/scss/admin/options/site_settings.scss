@@ -1,0 +1,25 @@
+// stylesheet: site settings admin styles
+	
+	// top-level hook
+		.hhs-wordpress_page_site-settings {
+
+		// framework hook
+			#theme-framework {
+
+				background-color: transparentize($admin, 0.875);
+
+				#post-body {
+
+					overflow: hidden;
+
+					#post-body-content {
+
+						background-color: $lights;
+
+					}
+
+				}
+
+			}
+
+		}

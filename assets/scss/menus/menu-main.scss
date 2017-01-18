@@ -1,0 +1,388 @@
+// stylesheet: main menu styles
+
+	// main menu
+		#off-canvas {
+
+			height: 100%;
+			min-height: 100%;
+
+			background: {
+
+				color: 
+
+					adjust-color(
+
+						$dark,
+						$lightness  : 0%,
+						$saturation : -60%,
+						$alpha 		: 0.000
+
+					)
+
+				;
+
+			}
+
+		}
+
+	// main menu
+		#main-menu {
+
+			position: relative;
+
+			min-width: 384px;
+			padding: 32px 0 32px 0;
+
+			border-bottom: 2px solid transparentize(white, 0.875);
+
+			@media #{$small-only} {
+				
+				min-width: 0;
+				padding: 24px 0 24px 0;
+
+				border-bottom: 1px solid transparentize(white, 0.825);
+			
+			}
+
+			&:before {
+
+				content: '';
+
+				position: absolute;
+
+				top: -2px;
+				right: 0;
+
+				z-index: 1;
+
+				width: 64px;
+				height: 2px;
+				margin: 0;
+				padding: 0;
+
+				background-color: $yellow;
+
+				@media #{$small-only} {
+					
+					width: 48px;
+				
+				}
+
+			}
+
+			#menu-primary-navigation {
+
+				width: 100%;
+
+				li {
+
+					// display: inline-block;
+
+					width: 100%;
+					height: 48px;
+					margin: 0;
+					padding: 0;
+
+					line-height: 48px;
+
+					@media #{$small-only} {
+						
+						height: 32px;
+
+						line-height: 32px;
+					
+					}
+
+					&:focus {
+
+						outline: none;
+
+					}
+
+					&.active {
+
+						a {
+
+							background: {
+
+								color: transparentize(white, 1.000);
+
+							}
+
+						}
+
+					}
+
+					a {
+
+						display: inline-block;
+
+						width: 100%;
+						height: 48px;
+						margin: 0;
+						padding: 1px 0 0 0;
+
+						font: {
+
+							family: $klav-nont;
+							size: 24px;
+							weight: normal;
+
+						}
+
+						line-height: 48px;
+
+						letter-spacing: 0.075em;
+
+						text: {
+
+							align: right;
+							transform: $low;
+							rendering: $pixper;
+
+						}
+
+						color: white;
+
+						background: {
+
+							color: transparent;
+
+						}
+
+						transition: $all220;
+
+						@media #{$small-only} {
+							
+							height: 32px;
+
+							font-size: 16px;
+
+							line-height: 32px;
+
+							letter-spacing: 0.065em;
+						
+						}
+
+						&:hover {
+
+							color: $turqish;
+
+							background: {
+
+								color: transparentize($dark-nite, 1.000);
+
+							}
+
+						}
+
+						&:focus {
+
+							outline: none;
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	// social media
+		#menu-overlay-social-media {
+
+			display: flex;
+
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+
+			width: 320px;
+			height: 48px;
+			margin: 16px 0 0 0;
+
+			@media #{$small-only} {
+				
+				height: 32px;
+			
+			}
+
+			.menu {
+
+				display: flex;
+
+				flex-direction: row;
+				justify-content: flex-end;
+				align-items: center;
+
+				width: 304px;
+				height: 48px;
+				margin: 0;
+
+				@media #{$small-only} {
+					
+					height: 32px;
+				
+				}
+
+				li {
+
+					display: block;
+
+					width: 48px;
+					height: 48px;
+					margin: 0 8px 0 8px;
+					padding: 0;
+
+					opacity: 0.585;
+
+					transition: $all220;
+
+					@media #{$small-only} {
+						
+						width: 32px;
+						height: 32px;
+					
+					}
+
+					&.facebook {
+
+						a {
+
+							background: {
+
+								image: url(../img/icons/social/facebook.svg);
+
+							}
+
+						}
+
+					}
+
+					&.twitter {
+
+						a {
+
+							background: {
+
+								image: url(../img/icons/social/twitter.svg);
+
+							}
+
+						}
+
+					}
+
+					&.linkedin {
+
+						a {
+
+							background: {
+
+								image: url(../img/icons/social/linkedin.svg);
+
+							}
+
+						}
+
+					}
+
+					&.pinterest {
+
+						a {
+
+							background: {
+
+								image: url(../img/icons/social/pinterest.svg);
+
+							}
+
+						}
+
+					}
+
+					&.instagram {
+
+						a {
+
+							background: {
+
+								image: url(../img/icons/social/instagram.svg);
+
+							}
+
+						}
+
+					}
+
+					&:first-child {
+
+						margin-left: 0;
+
+					}
+
+					&:last-child {
+
+						margin-right: 0;
+
+					}
+
+					&:hover {
+
+						opacity: 1.000;
+
+						background-color: transparentize($green, 0.235);
+
+					}
+
+					a {
+
+						display: inline-block;
+
+						width: 48px;
+						height: 48px;
+						margin: 0;
+						padding: 16px 16px 16px 16px;
+
+						overflow: hidden;
+
+						text-indent: -999em;
+
+						background: {
+
+							color: transparentize(white, 0.905);
+
+							repeat: no-repeat;
+							size: 16px 16px;
+							position: 16px 16px;
+
+						}
+
+						@media #{$small-only} {
+							
+							width: 32px;
+							height: 32px;
+							padding: 8px 8px 8px 8px;
+
+							background-position: 8px 8px;
+						
+						}
+
+					}
+
+					img {
+
+						width: 16px;
+						height: 16px;
+
+						vertical-align: initial;
+
+					}
+
+				}
+
+			}
+
+		}
